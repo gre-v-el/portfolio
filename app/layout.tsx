@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
 import NavButton from '@/components/NavButton'
 import 'material-symbols/outlined.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Gabriel Myszkier',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 	<html lang="en">
-		<body className={inter.className}>
+		<body className={font.className}>
 			<div id="container">
 				<nav>
 					<NavButton href='/' icon='home' text='Home'/>

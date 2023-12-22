@@ -16,12 +16,17 @@ main {
 	padding: 15px;
 }
 
-#tile-container {
+.tile-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 30px;
-	padding: 0 10%;
+	gap: 50px;
+	padding: 30px 10%;
+}
+
+.category-tile {
+	display: flex;
+	gap: 20px;
 }
 
 .tile {
