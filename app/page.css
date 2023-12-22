@@ -1,0 +1,13 @@
+main {
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#menu {
+	display: inline-block;
+	padding: 0 20vw 40vh 0;
+}
