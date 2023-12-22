@@ -41,6 +41,8 @@ nav {
 }
 
 .nav-button {
+	position: relative;
+
 	color: var(--text);
 
 	height: 100px;
@@ -54,12 +56,29 @@ nav {
 	text-decoration: none;
 }
 
+@keyframes bop {
+	0% {
+		scale: 1;
+	}
+	35% {
+		scale: 1.2;
+	}
+	100% {
+		scale: 1;
+	}
+	
+}
+
+.nav-button:hover {
+	animation: bop 0.6s ease-in-out;
+}
+
 .nav-button .material-symbols-outlined {
 	font-size: 50px;
-	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+	font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
 	transition: 0.3s;
 }
 
 .nav-button:hover .material-symbols-outlined {
-	font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+	font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;
 }

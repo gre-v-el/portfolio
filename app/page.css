@@ -1,13 +1,42 @@
 main {
 	min-height: 100vh;
+	overflow-x: hidden;
 
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
-#menu {
+#main-row {
+	display: flex;
+}
+
+#main-cell {
 	display: inline-block;
-	padding: 0 20vw 40vh 0;
+	padding: 15px;
+}
+
+#tile-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 0 10%;
+}
+
+.tile {
+	text-align: center;
+	font-weight: bold;
+	transition: 0.3s;
+	opacity: 0.4;
+}
+
+.tile:hover {
+	opacity: 1;
+	scale: 1.2;
+}
+
+.tile img {
+	display: block;
+	margin-bottom: 5px;
 }
