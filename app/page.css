@@ -45,3 +45,42 @@ main {
 	display: block;
 	margin-bottom: 5px;
 }
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* reveal */
+h1, h2, .category-tile {
+	animation: reveal 2s;
+	animation-fill-mode: both;
+}
+
+h1 {
+	animation-delay: 0.5s;
+}
+
+h2 {
+	animation-delay: 1.5s;
+}
+
+.category-tile:nth-child(1) {
+	animation-delay: 2.5s;
+}
+
+.category-tile:nth-child(2) {
+	animation-delay: 3.5s;
+}
+
+.category-tile:nth-child(3) {
+	animation-delay: 4.5s;
+}
+
+.category-tile:nth-child(4) {
+	animation-delay: 5.5s;
+}
