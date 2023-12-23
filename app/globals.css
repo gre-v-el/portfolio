@@ -28,7 +28,6 @@
 body {
 	margin: 0;
 	color: var(--text);
-
 	
 	background:
 	radial-gradient(circle at top, rgba(var(--primary-rgb), 0.1) 0%, transparent 80%),
@@ -55,9 +54,47 @@ h2 {
 	font-size: 2rem;
 }
 
-nav {
+#desktop-nav {
 	width: 120px;
 	border-right: 1px solid rgba(var(--primary-rgb), 0.2);
+}
+
+
+#mobile-nav .mobile-nav-buttons {
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.3s ease-in;
+	background-color: rgba(var(--background-rgb), 0.8);
+	border-bottom: 2px solid rgba(var(--primary-rgb), 0.5);
+}
+#mobile-nav.open .mobile-nav-buttons {
+	transform: scaleY(1);
+	transition: transform 0.3s ease-out;
+}
+#mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100vw;
+}
+.mobile-nav-padder {
+	height: 70px;
+}
+
+
+#mobile-nav-button .material-symbols-outlined {
+	font-size: 60px;
+}
+#mobile-nav-button {
+	background-color: rgba(var(--background-rgb), 0.9);
+	border-bottom: 2px solid rgba(var(--primary-rgb), 0.5);
+}
+
+.mobile-nav-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .nav-button {
@@ -101,4 +138,22 @@ nav {
 
 .nav-button:hover .material-symbols-outlined {
 	font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+}
+
+
+@media (max-width: 800px) {
+	#desktop-nav {
+		display: none;
+	}
+	h1 {
+		font-size: 2.3rem;
+	}
+	h2 {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 800px) {
+	#mobile-nav, .mobile-nav-padder {
+		display: none;
+	}
 }

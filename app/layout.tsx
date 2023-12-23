@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
-import NavButton from '@/components/NavButton'
 import 'material-symbols/outlined.css'
+import MobileNav from '@/components/MobileNav';
+import NavButtonSet from '@/components/NavButtonSet';
 
 const font = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Gabriel Myszkier',
-	description: 'Resume and portfolio of Gabriel Myszkier',
+	description: 'Portfolio and resume of Gabriel Myszkier',
 }
 
 export default function RootLayout({
@@ -16,16 +17,20 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode
 }) {
+	function toggleMobileNav() {
+		const nav = document.getElementById('mobile-nav');
+		if (nav) {
+			nav.classList.toggle('open');
+		}
+	}
+
 	return (
 	<html lang="en">
 		<body className={font.className}>
+			<MobileNav/>
 			<div id="container">
-				<nav>
-					<NavButton href='/' icon='home' text='Home'/>
-					<NavButton href='/projects' icon='code_blocks' text='Projects'/>
-					<NavButton href='/education' icon='school' text='Education'/>
-					<NavButton href='/resume' icon='description' text='Resume'/>
-					<NavButton href='/contact' icon='contact_mail' text='Contact'/>
+				<nav id="desktop-nav">
+					<NavButtonSet/>
 				</nav>
 				<main>
 					{children}
@@ -34,5 +39,5 @@ export default function RootLayout({
 		</body>
 	</html>
 	)
-	}
+}
 	
