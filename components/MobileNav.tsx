@@ -27,9 +27,6 @@ const MobileNav: React.FC = () => {
 		<>
 			<nav id="mobile-nav" className={cl}>
 				<div id="mobile-hamburger" onClick={clickNav}>
-					{/* <span className="material-symbols-outlined">
-						menu
-					</span> */}
 					<div id="hamburger-icon"><div/></div>
 				</div>
 				<div id="mobile-nav-buttons">
