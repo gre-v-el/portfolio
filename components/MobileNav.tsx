@@ -5,7 +5,7 @@ import NavButton from './NavButton';
 import { usePathname, useRouter } from 'next/navigation';
 import NavButtonSet from './NavButtonSet';
 
-const MobileNav: React.FC = () => {
+export default function MobileNav() {
 	let [loading, setLoading] = useState(true);
 	let [visible, setVisible] = useState(false);
 	const path = usePathname();
@@ -35,8 +35,6 @@ const MobileNav: React.FC = () => {
 			</nav>
 			<div className="mobile-nav-padder"></div>
 		</>
-		);
-	};
-	
-	export default MobileNav;
+	);
+};
 	

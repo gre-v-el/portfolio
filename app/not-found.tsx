@@ -1,7 +1,7 @@
 import "./not-found.css"
 import { NextPage } from 'next';
 
-const NotFoundPage: NextPage = () => {
+export default function notFoundPage() {
 	return (
 		<div className="not-found">
 			<h1>404</h1>
@@ -9,5 +9,3 @@ const NotFoundPage: NextPage = () => {
 		</div>
 	);
 };
-
-export default NotFoundPage;

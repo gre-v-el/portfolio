@@ -1,0 +1,51 @@
+{
+	"tags": [
+		"Rust",
+		"macroquad",
+		"egui",
+		"Wgpu",
+		"Java",
+		"JavaFx",
+		"javascript",
+		"typescript",
+		"Next.js",
+		"React",
+		"Three.js",
+		"Godot",
+		"Flutter",
+		"Flame",
+		"itch.io",
+		"Google Play"
+	],
+	"projects": [
+		{
+			"name": "Mandelbrot and Julia sets viewer",
+			"date": "December 2021",
+			"short_description": "Split-view realtime explorer of famous fractals made in Three.js",
+			"long_description": "Split-view realtime explorer of famous fractals made in Three.js. Pickover stalk rendering adds beautiful details to the picture, which can be rendered and saved in high resolution. The tool can be used in browser.",
+			"tags": [
+				"javascript",
+				"Three.js"
+			],
+			"repository": "https://github.com/gre-v-el/Mandelbrot-and-Julia-sets-viewer",
+			"live_link": "https://gre-v-el.github.io/Mandelbrot-and-Julia-sets-viewer/",
+			"thumbnail": "mandelbrot.png",
+			"images": ["mandelbrot1.png", "mandelbrot2.png", "mandelbrot3.png", "mandelbrot4.png", "mandelbrot5.png", "mandelbrot6.png"]
+		},
+		{
+			"name": "Fractal Terrain Constructor",
+			"date": "January 2023",
+			"short_description": "Modular tool for procedural generation of fractal terrains",
+			"long_description": "Modular tool for procedural generation of fractal terrains. The user defines a sequence of generation steps, which are then executed to create a terrain. Meshes can be exported to .obj files to use in other software.",
+			"tags": [
+				"Rust",
+				"egui",
+				"wgpu"
+			],
+			"repository": "https://github.com/gre-v-el/Fractal-Terrain-Constructor",
+			"release_link": "https://github.com/gre-v-el/Fractal-Terrain-Constructor/releases/tag/Windows",
+			"thumbnail": "terrain.png",
+			"images": ["terrain.png", "terrain1.png", "terrain2.png", "terrain3.png"]
+		}
+	]
+}

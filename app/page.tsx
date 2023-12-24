@@ -23,7 +23,7 @@ export default function Home() {
 			<div className="category-tile">
 				<TechTile text='Rust'/>
 				<TechTile text='macroquad'/>
-				<TechTile text='eframe'/>
+				<TechTile text='egui'/>
 				<TechTile text='Wgpu'/>
 			</div>
 			<div className="category-tile">
@@ -32,6 +32,7 @@ export default function Home() {
 			</div>
 			<div className="category-tile">
 				<TechTile text='javascript'/>
+				<TechTile text='typescript'/>
 				<TechTile text='Next.js'/>
 				<TechTile text='React'/>
 				<TechTile text='Three.js'/>

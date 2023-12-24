@@ -1,7 +1,7 @@
 import React from "react";
 import NavButton from "./NavButton";
 
-function NavButtonSet() {
+export default function NavButtonSet() {
 	return (
 		<>
 			<NavButton href='/' icon='home' text='Home'/>
@@ -12,5 +12,3 @@ function NavButtonSet() {
 		</>
 	);
 }
-
-export default NavButtonSet;
