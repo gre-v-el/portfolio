@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import './page.css'
 import TechTile from '@/components/TechTile';
 
@@ -6,15 +5,20 @@ export default function Home() {
 	return (
 	<>
 		<div style={{flexGrow: 1}}/>
+
 		<div id="main-row">
 			<div style={{flexGrow: 1}}/>
+			
 			<div id="main-cell">
 				<h1>Gabriel Myszkier</h1>
 				<h2>software developer</h2>
 			</div>
+
 			<div style={{flexGrow: 2}}/>
 		</div>
+
 		<div style={{flexGrow: 1}}/>
+
 		<div className="tile-container">
 			<div className="category-tile">
 				<TechTile text='Rust'/>
@@ -42,7 +46,6 @@ export default function Home() {
 		</div>
 		
 		<div style={{flexGrow: 1}}/>
-
 	</>
 	)
 }

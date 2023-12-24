@@ -7,35 +7,36 @@ import NavButtonSet from './NavButtonSet';
 
 const MobileNav: React.FC = () => {
 	let [loading, setLoading] = useState(true);
-	let [vis, setVis] = useState(false);
+	let [visible, setVisible] = useState(false);
 	const path = usePathname();
 	
 	function clickNav() {
-		setVis(!vis);
+		setVisible(!visible);
 		setLoading(false);
-
-		console.log("vis: " + vis + ", loading: " + loading);
 	}
 
+	// Close the nav when the path changes
 	useEffect(() => {
-		setVis(false);
+		setVisible(false);
 	}, [path]);
 	
-	const cl = loading ? "" : (vis ? "open" : "closed"); 
+	// Don't show the loading animation on load
+	const cl = loading ? "" : (visible ? "open" : "closed"); 
 
 	return (
 		<>
-		<nav id="mobile-nav" className={cl}>
-			<div id="mobile-nav-button" onClick={clickNav}>
-				<span className="material-symbols-outlined">
-					menu
-				</span>
-			</div>
-			<div className="mobile-nav-buttons">
-				<NavButtonSet/>
-			</div>
-		</nav>
-		<div className="mobile-nav-padder"></div>
+			<nav id="mobile-nav" className={cl}>
+				<div id="mobile-hamburger" onClick={clickNav}>
+					{/* <span className="material-symbols-outlined">
+						menu
+					</span> */}
+					<div id="hamburger-icon"><div/></div>
+				</div>
+				<div id="mobile-nav-buttons">
+					<NavButtonSet/>
+				</div>
+			</nav>
+			<div className="mobile-nav-padder"></div>
 		</>
 		);
 	};

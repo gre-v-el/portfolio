@@ -1,32 +1,29 @@
+/* Main text positioning */
 main {
-	min-height: 100vh;
-	overflow-x: hidden;
-
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
-
 #main-row {
 	display: flex;
 }
-
 #main-cell {
 	display: inline-block;
 	padding: 15px;
 }
 
+
+/* Tech tiles */
 .tile-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 50px;
 	padding: 30px 10%;
+	gap: 50px;
 }
-
 .category-tile {
 	display: flex;
-	gap: 20px;
+	gap: 10px;
 }
 
 .tile {
@@ -38,17 +35,17 @@ main {
 	flex-direction: column;
 	align-items: center;
 }
-
 .tile:hover {
 	opacity: 1;
 	scale: 1.2;
 }
-
 .tile img {
 	display: block;
 	margin-bottom: 5px;
 }
 
+
+/* reveal */
 @keyframes reveal {
 	0% {
 		top: -20px;
@@ -62,41 +59,34 @@ main {
 	}
 }
 
-/* reveal */
 h1, h2, .category-tile {
 	position: relative;
 	animation: reveal 2s;
 	animation-fill-mode: both;
 }
-
 h1 {
 	animation-delay: 0.5s;
 }
-
 h2 {
 	animation-delay: 1.5s;
 }
-
 .category-tile:nth-child(1) {
 	animation-delay: 2.5s;
 }
-
 .category-tile:nth-child(2) {
 	animation-delay: 3s;
 }
-
 .category-tile:nth-child(3) {
 	animation-delay: 3.5s;
 }
-
 .category-tile:nth-child(4) {
 	animation-delay: 4s;
 }
 
 
+/* Tech tiles responsiveness */
 @media (max-width: 800px) {
 	.category-tile {
-		padding: 30px 5%;
 		flex-wrap: wrap;
 		justify-content: center;
 	}

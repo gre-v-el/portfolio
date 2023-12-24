@@ -17,13 +17,6 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode
 }) {
-	function toggleMobileNav() {
-		const nav = document.getElementById('mobile-nav');
-		if (nav) {
-			nav.classList.toggle('open');
-		}
-	}
-
 	return (
 	<html lang="en">
 		<body className={font.className}>
