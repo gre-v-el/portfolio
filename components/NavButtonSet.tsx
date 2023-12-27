@@ -8,6 +8,7 @@ export default function NavButtonSet() {
 			<NavButton href='/projects' icon='code_blocks' text='Projects'/>
 			<NavButton href='/education' icon='school' text='Education'/>
 			<NavButton href='/resume' icon='description' text='Resume'/>
+			<NavButton href='/about' icon='contacts' text='About Me'/>
 			<NavButton href='/contact' icon='contact_mail' text='Contact'/>
 		</>
 	);

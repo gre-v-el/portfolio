@@ -1,8 +1,9 @@
 /* Main text positioning */
-main {
+#main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	height: 100%;
 }
 #main-row {
 	display: flex;
@@ -59,15 +60,15 @@ main {
 	}
 }
 
-h1, h2, .category-tile {
+.reveal, .category-tile {
 	position: relative;
 	animation: reveal 2s;
 	animation-fill-mode: both;
 }
-h1 {
+h1.reveal {
 	animation-delay: 0.5s;
 }
-h2 {
+h2.reveal {
 	animation-delay: 1.5s;
 }
 .category-tile:nth-child(1) {

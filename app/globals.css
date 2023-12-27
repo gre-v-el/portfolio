@@ -46,7 +46,7 @@ body {
 	display: flex;
 }
 main {
-	min-height: calc(100vh - 100px);
+	min-height: 100vh;
 	overflow-x: hidden;
 	flex-grow: 1;
 }
@@ -194,6 +194,9 @@ h2 {
 
 /* responsiveness */
 @media (max-width: 800px) {
+	main {
+		min-height: calc(100vh - 70px);
+	}
 	#desktop-nav {
 		display: none;
 	}
