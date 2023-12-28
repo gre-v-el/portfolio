@@ -82,6 +82,7 @@ h3 {
 #hamburger-icon {
 	width: 40px;
 	padding: 15px;
+	cursor: pointer;
 }
 #hamburger-icon div {
 	margin: 6px 0;
@@ -100,7 +101,7 @@ h3 {
 	width: 20px;
 }
 #mobile-nav.open #hamburger-icon div {
-	transform: translateY(-6px) translateX(-2px) rotate(-45deg);
+	transform: translateY(-6px) translateX(-2px) rotate(135deg);
 	width: 20px;
 }
 #mobile-nav.open #hamburger-icon::after {
@@ -149,6 +150,9 @@ h3 {
 #mobile-nav.closed #mobile-nav-buttons {
 	animation: scale-down 0.3s ease-in;
 	animation-fill-mode: both;
+}
+#mobile-nav.loading #mobile-nav-buttons {
+	display: none;
 }
 
 

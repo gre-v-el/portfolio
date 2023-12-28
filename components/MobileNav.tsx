@@ -21,7 +21,7 @@ export default function MobileNav() {
 	}, [path]);
 	
 	// Don't show the loading animation on load
-	const cl = loading ? "" : (visible ? "open" : "closed"); 
+	const cl = loading ? "closed loading" : (visible ? "open" : "closed"); 
 
 	return (
 		<>
