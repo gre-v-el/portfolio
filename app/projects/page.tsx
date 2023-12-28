@@ -9,7 +9,7 @@ export default function Projects() {
 	return (
 	<div className={style["main"]}>
 		<h2>All projects</h2>
-		<Tags data={data}/>
+		<Tags tags={data.tags}/>
 		<ProjectTiles data={data}/>
 	</div>
 	);

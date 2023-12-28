@@ -1,0 +1,50 @@
+.main {
+	padding: 30px;
+}
+
+.title-centerer {
+	text-align: center;
+}
+
+.title {
+	display: inline-block;
+	text-align: left;
+}
+
+.images {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 0 40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.main p {
+	padding: 0 100px;
+}
+
+.main img {
+	max-width: 40%;
+	height: auto;
+}
+
+@media (max-width: 800px) {
+	.main img {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.main p {
+		padding: 0 10px;
+	}
+
+	.images {
+		display: block;
+	}
+
+	.main img {
+		width: 100%;
+		max-width: 100%;
+	}
+}

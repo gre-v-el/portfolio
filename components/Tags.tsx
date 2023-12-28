@@ -2,27 +2,33 @@ import Link from "next/link"
 
 export default function Tags(
 	{
-		data, 
+		tags, 
 		selected,
+		allColored = false,
+		clickable = true,
 	}: {
-		data: ProjectsData,
+		tags: Tag[],
 		selected?: string,
+		allColored?: boolean,
+		clickable?: boolean,
 	}
 ) {
 	return (
 		<div className="tags">
-			{data.tags.map((tag) => {
-				let col = selected == null || selected === tag.name ? tag.color : "#7777"
+			{tags.map((tag) => {
+				let col = allColored || selected != null && selected === tag.name ? tag.color : "#7777"
 
 				let href = selected === tag.name ? "/projects" : "/projects/tag/" + tag.name;
 
-				return (
+				let visual = (<div className="tag" style={{ backgroundColor: col }}>
+					{tag.name}
+				</div>);
+
+				return clickable ? (
 					<Link href={href} key={tag.name}>
-						<div className="tag" style={{ backgroundColor: col }}>
-							{tag.name}
-						</div>
+						{visual}
 					</Link>
-				)
+				) : visual;
 			})}
 		</div>
 	)

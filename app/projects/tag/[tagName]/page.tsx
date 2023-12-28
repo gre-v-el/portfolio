@@ -25,7 +25,7 @@ export default function TagName(
 		<div className={style["main"]}>
 			<h2>Projects tagged {params.tagName}</h2>
 
-			<Tags data={data} selected={params.tagName}/>
+			<Tags tags={data.tags} selected={params.tagName}/>
 			<ProjectTiles data={displayedData}/>
 			{displayed.length === 0 && (
 				<h3>no projects found</h3>

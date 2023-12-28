@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Tags from "./Tags";
 
 export default function ProjectTiles(
 	{
@@ -16,15 +17,7 @@ export default function ProjectTiles(
 						<h3>{project.name}</h3>
 						<h4>{project.date}</h4>
 						<p>{project.short_description}</p>
-						<div className="tags">
-							{project.tags.map((tag) => {
-								return (
-									<div className="tag" style={{ backgroundColor: data.tags.find((t) => t.name === tag)?.color }} key={tag}>
-										{tag}
-									</div>
-								);
-							})}
-						</div>
+						<Tags tags={data.tags.filter((t) => project.tags.includes(t.name))} allColored={true} clickable={false}/>
 					</div>
 				</Link>
 			)

@@ -6,7 +6,7 @@ export default function Home() {
 	<div id={styles["main"]}>
 		<div style={{flexGrow: 1}}/>
 
-		<div id="main-row">
+		<div id={styles["main-row"]}>
 			<div style={{flexGrow: 1}}/>
 			
 			<div id={styles["main-cell"]}>

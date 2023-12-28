@@ -51,7 +51,7 @@ main {
 	flex-grow: 1;
 }
 
-/* Header sizing */
+/* text sizing */
 h1 {
 	font-size: 4rem;
 }
@@ -61,8 +61,12 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 }
+p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
 
-/* Desktop and mobile navbar */
+/* Desktop and mobile navbars */
 #desktop-nav {
 	width: 120px;
 	border-right: 1px solid rgba(var(--primary-rgb), 0.2);
@@ -198,6 +202,8 @@ h3 {
 	font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;
 }
 
+
+/* tags */
 .tags {
 	display: flex;
 	flex-wrap: wrap;
@@ -212,8 +218,10 @@ h3 {
 	border-radius: 100px;
 	font-weight: bold;
 	transition: 0.3s;
+	color: #fff;
 }
 
+/* project tiles */
 .projects {
 	display: flex;
 	flex-wrap: wrap;
@@ -244,16 +252,6 @@ h3 {
 	text-decoration: none;
 }
 
-.tag {
-	color: #fff;
-}
-
-@media (max-width: 800px) {
-	.project {
-		width: 100%;
-	}
-}
-
 
 /* responsiveness */
 @media (max-width: 800px) {
@@ -271,6 +269,9 @@ h3 {
 	}
 	h3 {
 		font-size: 1.2rem;
+	}
+	.project {
+		width: calc(100% - 60px);
 	}
 }
 @media (min-width: 800px) {
