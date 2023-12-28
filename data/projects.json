@@ -1,27 +1,76 @@
 {
 	"tags": [
-		"Rust",
-		"macroquad",
-		"egui",
-		"Wgpu",
-		"Java",
-		"JavaFx",
-		"javascript",
-		"typescript",
-		"Next.js",
-		"React",
-		"Three.js",
-		"Godot",
-		"Flutter",
-		"Flame",
-		"itch.io",
-		"Google Play"
+		{
+			"name": "Rust",
+			"color": "#bf4300"
+		},
+		{
+			"name": "macroquad",
+			"color": "#bf0000"
+		},
+		{
+			"name": "egui",
+			"color": "#363636"
+		},
+		{
+			"name": "wgpu",
+			"color": "#7291ab"
+		},
+		{
+			"name": "Java",
+			"color": "#2a5791"
+		},
+		{
+			"name": "JavaFx",
+			"color": "#2e5587"
+		},
+		{
+			"name": "javascript",
+			"color": "#aac70a"
+		},
+		{
+			"name": "typescript",
+			"color": "#1a619c"
+		},
+		{
+			"name": "Next.js",
+			"color": "#000000"
+		},
+		{
+			"name": "React",
+			"color": "#025da8"
+		},
+		{
+			"name": "Three.js",
+			"color": "#333333"
+		},
+		{
+			"name": "Godot",
+			"color": "#0b4a7d"
+		},
+		{
+			"name": "Flutter",
+			"color": "#3d6a8f"
+		},
+		{
+			"name": "Flame",
+			"color": "#a34d0b"
+		},
+		{
+			"name": "itch.io",
+			"color": "#8c2303"
+		},
+		{
+			"name": "Google Play",
+			"color": "#0d661c"
+		}
 	],
 	"projects": [
 		{
+			"route": "mandelbrot",
 			"name": "Mandelbrot and Julia sets viewer",
 			"date": "December 2021",
-			"short_description": "Split-view realtime explorer of famous fractals made in Three.js",
+			"short_description": "Split-view realtime explorer of famous fractals",
 			"long_description": "Split-view realtime explorer of famous fractals made in Three.js. Pickover stalk rendering adds beautiful details to the picture, which can be rendered and saved in high resolution. The tool can be used in browser.",
 			"tags": [
 				"javascript",
@@ -33,6 +82,7 @@
 			"images": ["mandelbrot1.png", "mandelbrot2.png", "mandelbrot3.png", "mandelbrot4.png", "mandelbrot5.png", "mandelbrot6.png"]
 		},
 		{
+			"route": "terrain",
 			"name": "Fractal Terrain Constructor",
 			"date": "January 2023",
 			"short_description": "Modular tool for procedural generation of fractal terrains",
