@@ -1,7 +1,16 @@
-import './page.module.css'
+import Link from 'next/link';
+import style from './page.module.css'
+import Tags from '@/components/Tags';
+import ProjectTiles from '@/components/ProjectTiles';
 
-var projects = require('./projects.json');
+const data: ProjectsData = require('../../data/projects.json');
 
 export default function Projects() {
-	return <>Hi mom!</>
+	return (
+	<div className={style["main"]}>
+		<h2>All projects</h2>
+		<Tags data={data}/>
+		<ProjectTiles data={data}/>
+	</div>
+	);
 }
