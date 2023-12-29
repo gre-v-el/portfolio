@@ -62,6 +62,7 @@
 		},
 		{
 			"name": "Google Play",
+			"route": "GooglePlay",
 			"color": "#0d661c"
 		}
 	],

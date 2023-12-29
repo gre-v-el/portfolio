@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link"
 
 export default function Tags(
@@ -18,9 +19,10 @@ export default function Tags(
 			{tags.map((tag) => {
 				let col = allColored || selected != null && selected === tag.name ? tag.color : "#7777"
 
-				let href = selected === tag.name ? "/projects" : "/projects/tag/" + tag.name;
+				let href = selected === tag.name ? "/projects" : "/projects/tag/" + (tag.route === undefined ? tag.name : tag.route);
 
 				let visual = (<div className="tag" style={{ backgroundColor: col }}>
+					<Image src={"/tech_icons/"+tag.name+".png"} width={16} height={16} alt={tag.name}/>
 					{tag.name}
 				</div>);
 

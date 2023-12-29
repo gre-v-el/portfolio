@@ -22,23 +22,32 @@ export default function TagName(
 					<h2>{proj.name}</h2>
 					<h3>{proj.date}</h3>
 
-					{proj.repository && (
-						<a href={proj.repository}>
-							Repo
-						</a>
-					)}
+					<div className={style["links"]}>
+						{proj.repository && (
+							<a href={proj.repository}>
+								<div>
+									github icon
+								</div>
+								See code
+							</a>
+						)}
 
-					{proj.live_link && (
-						<a href={proj.live_link}>
-							Live link
-						</a>
-					)}
-					
-					{proj.release_link && (
-						<a href={proj.release_link}>
-							Release link
-						</a>
-					)}
+						{proj.live_link && (
+							<a href={proj.live_link}>
+								<div>
+									See website
+								</div>
+							</a>
+						)}
+						
+						{proj.release_link && (
+							<a href={proj.release_link}>
+								<div>
+									See release
+								</div>
+							</a>
+						)}
+					</div>
 				</div>
 			</div>
 

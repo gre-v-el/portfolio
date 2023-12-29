@@ -1,5 +1,6 @@
 interface Tag {
 	name: string;
+	route?: string;
 	color: string;
 }
 

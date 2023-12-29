@@ -10,8 +10,8 @@ const data: ProjectsData = require('../../../../data/projects.json');
 export default function TagName(
 	{ params }: { params: { tagName: string } }
 ) {
-	let valid = data.tags.some((tag) => tag.name === params.tagName);
-	if(!valid) {
+	let used_tag = data.tags.find((tag) => (tag.route === undefined ? tag.name : tag.route) === params.tagName);
+	if(used_tag === undefined) {
 		notFound();
 	}
 
@@ -23,7 +23,7 @@ export default function TagName(
 
 	return (
 		<div className={style["main"]}>
-			<h2>Projects tagged {params.tagName}</h2>
+			<h2>Projects tagged {used_tag.name}</h2>
 
 			<Tags tags={data.tags} selected={params.tagName}/>
 			<ProjectTiles data={displayedData}/>

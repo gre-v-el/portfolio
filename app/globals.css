@@ -212,13 +212,16 @@ p {
 }
 
 .tag {
-	display: inline-block;
 	padding: 0.25rem 0.5rem;
 	margin: 0.25rem 0.25rem;
 	border-radius: 100px;
 	font-weight: bold;
 	transition: 0.3s;
 	color: #fff;
+
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
 }
 
 /* project tiles */
@@ -251,7 +254,6 @@ p {
 .tags a {
 	text-decoration: none;
 }
-
 
 /* responsiveness */
 @media (max-width: 800px) {
