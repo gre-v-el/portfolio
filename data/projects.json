@@ -68,11 +68,27 @@
 	],
 	"projects": [
 		{
+			"route": "terrain",
+			"name": "Fractal Terrain Constructor",
+			"date": "January 2023",
+			"short_description": "Modular tool for procedural generation of fractal terrains",
+			"long_description": "Modular tool for procedural generation of fractal terrains. The user defines a sequence of generation steps (such as subdivide, displace, etc), which are then executed to create a terrain. Meshes can be exported to .obj files to use in other software.",
+			"tags": [
+				"Rust",
+				"egui",
+				"wgpu"
+			],
+			"repository": "https://github.com/gre-v-el/Fractal-Terrain-Constructor",
+			"release_link": "https://github.com/gre-v-el/Fractal-Terrain-Constructor/releases/tag/Windows",
+			"thumbnail": "terrain.png",
+			"images": ["terrain.png", "terrain1.png", "terrain2.png", "terrain3.png"]
+		},
+		{
 			"route": "mandelbrot",
 			"name": "Mandelbrot and Julia sets viewer",
 			"date": "December 2021",
 			"short_description": "Split-view realtime explorer of famous fractals",
-			"long_description": "Split-view realtime explorer of famous fractals made in Three.js. Pickover stalk rendering adds beautiful details to the picture, which can be rendered and saved in high resolution. The tool can be used in browser.",
+			"long_description": "Split-view realtime explorer of famous fractals made in Three.js. Performs fast thanks to glsl shaders. Pickover stalk rendering adds beautiful details to the picture, which can be rendered and saved in resolution higher than your screen. The tool can be used in browser.",
 			"tags": [
 				"javascript",
 				"Three.js"
@@ -83,20 +99,45 @@
 			"images": ["mandelbrot1.png", "mandelbrot2.png", "mandelbrot3.png", "mandelbrot4.png", "mandelbrot5.png", "mandelbrot6.png"]
 		},
 		{
-			"route": "terrain",
-			"name": "Fractal Terrain Constructor",
-			"date": "January 2023",
-			"short_description": "Modular tool for procedural generation of fractal terrains",
-			"long_description": "Modular tool for procedural generation of fractal terrains. The user defines a sequence of generation steps, which are then executed to create a terrain. Meshes can be exported to .obj files to use in other software.",
+			"route": "GoLEditor",
+			"name": "Game of Life Editor",
+			"date": "December 2021",
+			"short_description": "A Game Of Life editor with stamp library, colors and quadtree optimization.",
+			"long_description": "A Game Of Life editor with stamp library, colors and quadtree optimization. The user can choose and place elements from a rich and extensible stamp library, set their colors, and watch the simulation with color blending. The simulation is optimized with a quadtree, which allows to simulate huge patterns in realtime.",
 			"tags": [
-				"Rust",
-				"egui",
-				"wgpu"
+				"Java",
+				"JavaFx"
 			],
-			"repository": "https://github.com/gre-v-el/Fractal-Terrain-Constructor",
-			"release_link": "https://github.com/gre-v-el/Fractal-Terrain-Constructor/releases/tag/Windows",
-			"thumbnail": "terrain.png",
-			"images": ["terrain.png", "terrain1.png", "terrain2.png", "terrain3.png"]
+			"repository": "https://github.com/gre-v-el/Game-Of-Life-Editor-With-Stamps",
+			"thumbnail": "GoL.png",
+			"images": ["GoL1.gif", "GoL2.gif", "GoL3.gif", "GoL4.gif", "GoL5.gif", "GoL6.gif", "GoL7.gif", "GoL8.gif"]
+		},
+		{
+			"route": "BarnesHut",
+			"name": "Barnes-Hut gravity simulator",
+			"date": "July 2021",
+			"short_description": "3d big scale gravity simulator",
+			"long_description": "A Java/lwjge 3d big scale gravity simulator. The user can place bodies with different masses, generate galaxies or nebulae, and watch them interact with each other. The simulation is based on Barnes-Hut algorithm, which subdivides the space in an octree to speed up the calculations.",
+			"tags": [
+				"Java"
+			],
+			"repository": "https://github.com/gre-v-el/Barnes-Hut-simulation",
+			"thumbnail": "barnes-hut.png",
+			"images": ["barnes-hut1.png", "barnes-hut2.png", "barnes-hut3.png", "barnes-hut4.png"]
+		},
+		{
+			"route": "",
+			"name": "",
+			"date": "",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
 		}
 	]
 }
