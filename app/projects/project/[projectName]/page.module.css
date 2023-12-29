@@ -21,11 +21,12 @@
 .links a {
 	text-decoration: none;
 	color: #fff;
-	display: block;
-	text-align: center;
 	background-color: #5557;
 	padding: 10px 15px;
 	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 .images {
@@ -41,14 +42,15 @@
 	padding: 0 100px;
 }
 
-.main img {
+.images img {
 	max-width: 40%;
 	height: auto;
 }
 
 @media (max-width: 800px) {
-	.main img {
+	.images img {
 		width: 100%;
+		max-width: 100%;
 		margin: 10px 0;
 	}
 
@@ -58,10 +60,5 @@
 
 	.images {
 		display: block;
-	}
-
-	.main img {
-		width: 100%;
-		max-width: 100%;
 	}
 }

@@ -1,7 +1,16 @@
 import styles from './page.module.css'
 import TechTile from '@/components/TechTile';
+import data from '@/data/projects.json';
 
 export default function Home() {
+	let tags = data.tags;
+	let tag_groups = [
+		tags.slice(0, 4),
+		tags.slice(4, 6),
+		tags.slice(6, 11),
+		tags.slice(11, 16),
+	];
+
 	return (
 	<div id={styles["main"]}>
 		<div style={{flexGrow: 1}}/>
@@ -20,30 +29,13 @@ export default function Home() {
 		<div style={{flexGrow: 1}}/>
 
 		<div className={styles["tile-container"]}>
-			<div className={styles["category-tile"]}>
-				<TechTile cls={styles['tile']} text='Rust'/>
-				<TechTile cls={styles['tile']} text='macroquad'/>
-				<TechTile cls={styles['tile']} text='egui'/>
-				<TechTile cls={styles['tile']} text='Wgpu'/>
-			</div>
-			<div className={styles["category-tile"]}>
-				<TechTile cls={styles['tile']} text='Java'/>
-				<TechTile cls={styles['tile']} text='JavaFx'/>
-			</div>
-			<div className={styles["category-tile"]}>
-				<TechTile cls={styles['tile']} text='javascript'/>
-				<TechTile cls={styles['tile']} text='typescript'/>
-				<TechTile cls={styles['tile']} text='Next.js'/>
-				<TechTile cls={styles['tile']} text='React'/>
-				<TechTile cls={styles['tile']} text='Three.js'/>
-			</div>
-			<div className={styles["category-tile"]}>
-				<TechTile cls={styles['tile']} text='Godot'/>
-				<TechTile cls={styles['tile']} text='Flutter'/>
-				<TechTile cls={styles['tile']} text='Flame'/>
-				<TechTile cls={styles['tile']} text='itch.io'/>
-				<TechTile cls={styles['tile']} text='Google Play'/>
-			</div>
+			{tag_groups.map((group) => (
+				<div className={styles["category-tile"]}>
+					{group.map((tag) => (
+						<TechTile cls={styles['tile']} tag={tag}/>
+					))}
+				</div>
+			))}
 		</div>
 		
 		<div style={{flexGrow: 1}}/>

@@ -1,17 +1,20 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default function TechTile({
-	text,
+	tag,
 	cls,
 }: {
-	text: string
+	tag: Tag
 	cls: string
 }) {
 	return (
-		<div className={cls}>
-			<Image src={`/tech_icons/${text}.png`} alt={text + " icon"} width={90} height={90} />
-			{text}
-		</div>
+		<Link href={"projects/tag/" + (tag.route === undefined ? tag.name : tag.route)}>
+			<div className={cls}>
+				<Image src={`/tech_icons/${tag.name}.png`} alt={tag.name + " icon"} width={90} height={90} />
+				{tag.name}
+			</div>
+		</Link>
 	)
 }

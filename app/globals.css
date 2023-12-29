@@ -276,7 +276,7 @@ p {
 		width: calc(100% - 60px);
 	}
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
 	#mobile-nav, .mobile-nav-padder {
 		display: none;
 	}
