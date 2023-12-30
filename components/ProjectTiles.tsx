@@ -16,7 +16,13 @@ export default function ProjectTiles(
 						<img src={"/projects/" + project.thumbnail} />
 						<h3>{project.name}</h3>
 						<h4>{project.date}</h4>
-						<p>{project.short_description}</p>
+
+						<div style={{flexGrow: 1}}/>
+						
+						<p dangerouslySetInnerHTML={{__html: project.short_description}}></p>
+
+						<div style={{flexGrow: 1}}/>
+
 						<Tags tags={data.tags.filter((t) => project.tags.includes(t.name))} allColored={true} clickable={false}/>
 					</div>
 				</Link>

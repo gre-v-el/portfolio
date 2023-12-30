@@ -232,6 +232,12 @@ p {
 	align-items: stretch;
 }
 
+.projects a {
+	text-decoration: none;
+	display: flex;
+	align-items: stretch;
+}
+
 .project {
 	text-align: center;
 	width: 300px;
@@ -240,16 +246,15 @@ p {
 	padding: 15px;
 	margin: 15px;
 	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .project img {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 10px;
-}
-
-.projects a {
-	text-decoration: none;
 }
 
 .tags a {

@@ -49,7 +49,7 @@ export default function TagName(
 			</div>
 
 			<Tags tags={data.tags.filter((t) => proj!.tags.includes(t.name))} allColored={true}/>
-			<p>{proj.long_description}</p>
+			<p dangerouslySetInnerHTML={{__html: proj.long_description}}></p>
 
 			<div className={style["images"]}>
 				{proj.images.map((img) => {

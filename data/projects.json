@@ -68,7 +68,7 @@
 	],
 	"projects": [
 		{
-			"route": "terrain",
+			"route": "Terrain",
 			"name": "Fractal Terrain Constructor",
 			"date": "January 2023",
 			"short_description": "Modular tool for procedural generation of fractal terrains",
@@ -84,7 +84,7 @@
 			"images": ["terrain.png", "terrain1.png", "terrain2.png", "terrain3.png"]
 		},
 		{
-			"route": "mandelbrot",
+			"route": "Mandelbrot",
 			"name": "Mandelbrot and Julia sets viewer",
 			"date": "December 2021",
 			"short_description": "Split-view realtime explorer of famous fractals",
@@ -102,8 +102,8 @@
 			"route": "GoLEditor",
 			"name": "Game of Life Editor",
 			"date": "December 2021",
-			"short_description": "A Game Of Life editor with stamp library, colors and quadtree optimization.",
-			"long_description": "A Game Of Life editor with stamp library, colors and quadtree optimization. The user can choose and place elements from a rich and extensible stamp library, set their colors, and watch the simulation with color blending. The simulation is optimized with a quadtree, which allows to simulate huge patterns in realtime.",
+			"short_description": "A Game Of Life editor with a stamp library, colors and quadtree optimization.",
+			"long_description": "A Game Of Life editor with a stamp library, colors and quadtree optimization. The user can choose and place elements from a rich and extensible stamp library, set their colors, and watch the simulation with color blending. The simulation is optimized with a quadtree, which allows to simulate huge patterns in realtime.",
 			"tags": [
 				"Java",
 				"JavaFx"
@@ -124,6 +124,34 @@
 			"repository": "https://github.com/gre-v-el/Barnes-Hut-simulation",
 			"thumbnail": "barnes-hut.png",
 			"images": ["barnes-hut1.png", "barnes-hut2.png", "barnes-hut3.png", "barnes-hut4.png"]
+		},
+		{
+			"route": "Trutagen",
+			"name": "Trutagen",
+			"date": "March 2022",
+			"short_description": "<b>Tru</b>th <b>ta</b>ble <b>gen</b>erator.",
+			"long_description": "An easy to use logic expression parser and evaluator made as one of my first Rust learning projects. The user inputs an expression, the program first tokenizes it, then converts it to reverse polish notation, and finally evaluates it. Example input and output:<br><pre>not a xor b and (c or a)\n\n ┏━━━━━┳━━━━━┳━━━━━┳━━━━━━━━━┓\n ┃  A  ┃  B  ┃  C  ┃ result  ┃\n ┣━━━━━╋━━━━━╋━━━━━╋━━━━━━━━━┫\n ┃  0  ┃  0  ┃  0  ┃    1    ┃\n ┃  0  ┃  0  ┃  1  ┃    1    ┃\n ┃  0  ┃  1  ┃  0  ┃    1    ┃\n ┃  0  ┃  1  ┃  1  ┃    0    ┃\n ┃  1  ┃  0  ┃  0  ┃    0    ┃\n ┃  1  ┃  0  ┃  1  ┃    0    ┃\n ┃  1  ┃  1  ┃  0  ┃    1    ┃\n ┃  1  ┃  1  ┃  1  ┃    1    ┃\n ┗━━━━━┻━━━━━┻━━━━━┻━━━━━━━━━┛\n   NOT A XOR B AND ( C OR A )</pre>",
+			"tags": [
+				"Rust"
+			],
+			"repository": "https://github.com/gre-v-el/Trutagen",
+			"thumbnail": "trutagen.png",
+			"images": ["trutagen.png"]
+		},
+		{
+			"route": "DLA",
+			"name": "Infinite DLA",
+			"date": "March 2023",
+			"short_description": "Unconstrained, modifiable and fast Diffusion Limited Aggregation simulation.",
+			"long_description": "The user gets to set the basic parameters of the simulation, concerning the visuals, and also some advanced parameters such as world-to-aggregate ratio and bin sizing.<br><br>The simulation zooms out as the aggregate grows. It does not slow down significantly with the size of the aggregate, thanks to the dynamic binning algorithm.",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "https://github.com/gre-v-el/Infinite-DLA",
+			"thumbnail": "DLA.png",
+			"images": ["DLA1.png", "DLA2.png", "DLA3.png", "DLA4.png", "DLA5.png", "DLA6.png", "DLA7.png", "DLA8.png"]
 		},
 		{
 			"route": "",
