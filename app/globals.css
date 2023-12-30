@@ -251,7 +251,7 @@ p {
 	flex-direction: column;
 }
 
-.project img {
+.project > img {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 10px;

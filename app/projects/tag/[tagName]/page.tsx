@@ -15,7 +15,7 @@ export default function TagName(
 		notFound();
 	}
 
-	let displayed = data.projects.filter((project) => project.tags.includes(params.tagName));
+	let displayed = data.projects.filter((project) => project.tags.includes(used_tag!.name));
 	let displayedData: ProjectsData = {
 		tags: data.tags,
 		projects: displayed,
@@ -25,7 +25,7 @@ export default function TagName(
 		<div className={style["main"]}>
 			<h2>Projects tagged {used_tag.name}</h2>
 
-			<Tags tags={data.tags} selected={params.tagName}/>
+			<Tags tags={data.tags} selected={used_tag!.name}/>
 			<ProjectTiles data={displayedData}/>
 			{displayed.length === 0 && (
 				<h3>no projects found</h3>

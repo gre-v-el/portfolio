@@ -68,6 +68,234 @@
 	],
 	"projects": [
 		{
+			"route": "Portfolio",
+			"name": "This website",
+			"date": "December 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"typescript",
+				"React",
+				"Next.js"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "GridLsystems",
+			"name": "Grid L-systems",
+			"date": "December 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "CppFuncLengthCounter",
+			"name": "Cpp function length counter",
+			"date": "December 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"javascript"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "RunningPaceCalculator",
+			"name": "Running Pace Calculator",
+			"date": "December 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Flutter",
+				"Google Play"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "ShellTexturing",
+			"name": "Shell Texturing",
+			"date": "November 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "FilesystemExplorer",
+			"name": "Filesystem Explorer",
+			"date": "October 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "GalaxyBlast",
+			"name": "GalaxyBlast",
+			"date": "July-August 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Flutter",
+				"Flame",
+				"Google Play"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "BeeTheZap",
+			"name": "Bee the zap",
+			"date": "August 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Godot",
+				"itch.io"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "Attractors",
+			"name": "Chaotic Attractors",
+			"date": "April 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "Rubbish",
+			"name": "RUBBISH",
+			"date": "April 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "DLA",
+			"name": "Infinite DLA",
+			"date": "March 2023",
+			"short_description": "Unconstrained, modifiable and fast Diffusion Limited Aggregation simulation.",
+			"long_description": "The user gets to set the basic parameters of the simulation, concerning the visuals, and also some advanced parameters such as world-to-aggregate ratio and bin sizing.<br><br>The simulation zooms out as the aggregate grows. It does not slow down significantly with the size of the aggregate, thanks to the dynamic binning algorithm.",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "https://github.com/gre-v-el/Infinite-DLA",
+			"thumbnail": "DLA.png",
+			"images": ["DLA1.png", "DLA2.png", "DLA3.png", "DLA4.png", "DLA5.png", "DLA6.png", "DLA7.png", "DLA8.png"]
+		},
+		{
+			"route": "EyeOfThePi",
+			"name": "Eye of the Pi",
+			"date": "March 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "Graph",
+			"name": "Graph display",
+			"date": "March 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "Takuzu",
+			"name": "Takuzu",
+			"date": "February 2023",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"itch.io"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
 			"route": "Terrain",
 			"name": "Fractal Terrain Constructor",
 			"date": "January 2023",
@@ -82,6 +310,36 @@
 			"release_link": "https://github.com/gre-v-el/Fractal-Terrain-Constructor/releases/tag/Windows",
 			"thumbnail": "terrain.png",
 			"images": ["terrain.png", "terrain1.png", "terrain2.png", "terrain3.png"]
+		},
+		{
+			"route": "PPS",
+			"name": "Primordial Particle Systems",
+			"date": "December 2022",
+			"short_description": "",
+			"long_description": "",
+			"tags": [
+				"Rust",
+				"macroquad",
+				"egui"
+			],
+			"repository": "",
+			"live_link": "",
+			"release_link": "",
+			"thumbnail": "",
+			"images": [""]
+		},
+		{
+			"route": "Trutagen",
+			"name": "Trutagen",
+			"date": "March 2022",
+			"short_description": "<b>Tru</b>th <b>ta</b>ble <b>gen</b>erator.",
+			"long_description": "An easy to use logic expression parser and evaluator made as one of my first Rust learning projects. The user inputs an expression, the program first tokenizes it, then converts it to reverse polish notation, and finally evaluates it. Example input and output:<br><pre>not a xor b and (c or a)\n\n ┏━━━━━┳━━━━━┳━━━━━┳━━━━━━━━━┓\n ┃  A  ┃  B  ┃  C  ┃ result  ┃\n ┣━━━━━╋━━━━━╋━━━━━╋━━━━━━━━━┫\n ┃  0  ┃  0  ┃  0  ┃    1    ┃\n ┃  0  ┃  0  ┃  1  ┃    1    ┃\n ┃  0  ┃  1  ┃  0  ┃    1    ┃\n ┃  0  ┃  1  ┃  1  ┃    0    ┃\n ┃  1  ┃  0  ┃  0  ┃    0    ┃\n ┃  1  ┃  0  ┃  1  ┃    0    ┃\n ┃  1  ┃  1  ┃  0  ┃    1    ┃\n ┃  1  ┃  1  ┃  1  ┃    1    ┃\n ┗━━━━━┻━━━━━┻━━━━━┻━━━━━━━━━┛\n   NOT A XOR B AND ( C OR A )</pre>",
+			"tags": [
+				"Rust"
+			],
+			"repository": "https://github.com/gre-v-el/Trutagen",
+			"thumbnail": "trutagen.png",
+			"images": ["trutagen.png"]
 		},
 		{
 			"route": "Mandelbrot",
@@ -99,7 +357,7 @@
 			"images": ["mandelbrot1.png", "mandelbrot2.png", "mandelbrot3.png", "mandelbrot4.png", "mandelbrot5.png", "mandelbrot6.png"]
 		},
 		{
-			"route": "GoLEditor",
+			"route": "GolEditor",
 			"name": "Game of Life Editor",
 			"date": "December 2021",
 			"short_description": "A Game Of Life editor with a stamp library, colors and quadtree optimization.",
@@ -124,48 +382,6 @@
 			"repository": "https://github.com/gre-v-el/Barnes-Hut-simulation",
 			"thumbnail": "barnes-hut.png",
 			"images": ["barnes-hut1.png", "barnes-hut2.png", "barnes-hut3.png", "barnes-hut4.png"]
-		},
-		{
-			"route": "Trutagen",
-			"name": "Trutagen",
-			"date": "March 2022",
-			"short_description": "<b>Tru</b>th <b>ta</b>ble <b>gen</b>erator.",
-			"long_description": "An easy to use logic expression parser and evaluator made as one of my first Rust learning projects. The user inputs an expression, the program first tokenizes it, then converts it to reverse polish notation, and finally evaluates it. Example input and output:<br><pre>not a xor b and (c or a)\n\n ┏━━━━━┳━━━━━┳━━━━━┳━━━━━━━━━┓\n ┃  A  ┃  B  ┃  C  ┃ result  ┃\n ┣━━━━━╋━━━━━╋━━━━━╋━━━━━━━━━┫\n ┃  0  ┃  0  ┃  0  ┃    1    ┃\n ┃  0  ┃  0  ┃  1  ┃    1    ┃\n ┃  0  ┃  1  ┃  0  ┃    1    ┃\n ┃  0  ┃  1  ┃  1  ┃    0    ┃\n ┃  1  ┃  0  ┃  0  ┃    0    ┃\n ┃  1  ┃  0  ┃  1  ┃    0    ┃\n ┃  1  ┃  1  ┃  0  ┃    1    ┃\n ┃  1  ┃  1  ┃  1  ┃    1    ┃\n ┗━━━━━┻━━━━━┻━━━━━┻━━━━━━━━━┛\n   NOT A XOR B AND ( C OR A )</pre>",
-			"tags": [
-				"Rust"
-			],
-			"repository": "https://github.com/gre-v-el/Trutagen",
-			"thumbnail": "trutagen.png",
-			"images": ["trutagen.png"]
-		},
-		{
-			"route": "DLA",
-			"name": "Infinite DLA",
-			"date": "March 2023",
-			"short_description": "Unconstrained, modifiable and fast Diffusion Limited Aggregation simulation.",
-			"long_description": "The user gets to set the basic parameters of the simulation, concerning the visuals, and also some advanced parameters such as world-to-aggregate ratio and bin sizing.<br><br>The simulation zooms out as the aggregate grows. It does not slow down significantly with the size of the aggregate, thanks to the dynamic binning algorithm.",
-			"tags": [
-				"Rust",
-				"macroquad",
-				"egui"
-			],
-			"repository": "https://github.com/gre-v-el/Infinite-DLA",
-			"thumbnail": "DLA.png",
-			"images": ["DLA1.png", "DLA2.png", "DLA3.png", "DLA4.png", "DLA5.png", "DLA6.png", "DLA7.png", "DLA8.png"]
-		},
-		{
-			"route": "",
-			"name": "",
-			"date": "",
-			"short_description": "",
-			"long_description": "",
-			"tags": [
-			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
 		}
 	]
 }
