@@ -4,3 +4,4 @@
 * more projects
 * categories: mobile/web/desktop data science/simulations/interface
 * PPS, FsExpl readme
+* favicon

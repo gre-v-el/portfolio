@@ -44,6 +44,13 @@ export default function TagName(
 								See release
 							</a>
 						)}
+						
+						{proj.video_link && (
+							<a href={proj.video_link} target="_blank">
+								<Image src="/tech_icons/youtube.png" alt="youtube icon" width={24} height={24}/>
+								See video
+							</a>
+						)}
 					</div>
 				</div>
 			</div>

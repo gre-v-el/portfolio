@@ -315,18 +315,17 @@
 			"route": "PPS",
 			"name": "Primordial Particle Systems",
 			"date": "December 2022",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "PPS simulator with editable rulesets.",
+			"long_description": "PPS simulator that lets the user modify the rulesets, place particles with different rules, move them and see them interact.",
 			"tags": [
 				"Rust",
 				"macroquad",
 				"egui"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/Promordial-Particle-System",
+			"video_link": "https://www.youtube.com/watch?v=FVyj6RD3FXc",
+			"thumbnail": "PPS.png",
+			"images": ["PPS1.png", "PPS2.png", "PPS3.png", "PPS4.png"]
 		},
 		{
 			"route": "Trutagen",
