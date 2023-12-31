@@ -203,33 +203,29 @@
 			"route": "Attractors",
 			"name": "Chaotic Attractors",
 			"date": "April 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "Simulates and displays arbitrary chaotic attractors",
+			"long_description": "The software simulates chaotic attractors, which are mathematical objects that have a tendency to converge to a certain set of points. The user can choose from a set of predefined attractors, or define their own. To define an attractor the user has to provide a system of differential equations. The software then tokenizes the equations and turns them into three abstract syntax trees. The trees are then used to to simulate point paths and to display the attractor. The user can also modify the parameters of the simulation. The software is capable of simulating and displaying ~60 000 points at comfortable framerate.",
 			"tags": [
 				"Rust",
 				"macroquad",
 				"egui"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/Chaotic-Attractors",
+			"thumbnail": "attractors.png",
+			"images": ["attractors1.png", "attractors2.gif", "attractors3.png", "attractors4.png", "attractors5.png", "attractors6.png", "attractors7.gif"]
 		},
 		{
 			"route": "Rubbish",
 			"name": "RUBBISH",
 			"date": "April 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "<b>R</b>obotic <b>U</b>tility <b>B</b>arely <b>B</b>eneficial <b>I</b>n <b>S</b>erving <b>H</b>umans",
+			"long_description": "This is my attempt at LLMs (although it turned out to be a <b>L</b>ittle <b>L</b>anguege <b>M</b>odel. It reads a corpus of text, analyzes the frequencies of sequences of letters and tokenizes the whole corpus. It then generates a succession tree - a tree representing the sequences of tokens in the corpus, together with their frequencies. The program can then use the tree to generate new text, which is similar to the original corpus.",
 			"tags": [
 				"Rust"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/RUBBISH",
+			"thumbnail": "Rubbish.png",
+			"images": ["Rubbish.png"]
 		},
 		{
 			"route": "DLA",
@@ -250,50 +246,45 @@
 			"route": "EyeOfThePi",
 			"name": "Eye of the Pi",
 			"date": "March 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "Approximations of pi",
+			"long_description": "The software can approximate pi in three different ways. The first one (\"Darts\") is a Monte Carlo method, which uses random points to estimate the area of a circle. The second one (\"Toothpicks\") is a Buffon's needle simulation, which uses random needle throws to estimate the value of pi. The third one is an ellastic collision simulation, which uses the number of collisions to estimate pi.",
 			"tags": [
 				"Rust",
 				"macroquad"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/eye-of-the-pi",
+			"thumbnail": "pi.png",
+			"images": ["pi1.png", "pi2.png", "pi3.png", "pi4.png", "pi5.png"]
 		},
 		{
 			"route": "Graph",
 			"name": "Graph display",
 			"date": "March 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "Ordered displaying of complex graphs",
+			"long_description": "The program simulates a graph as a set of nodes connected with springs. The springs' stiffnesses and lengths are chosen according to the strength of connection between given nodes. Simulating the system results in a graph that is more readable than a random layout. The user can additionally manipulate nodes manually.",
 			"tags": [
 				"Rust",
 				"macroquad"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/Graph-Display",
+			"thumbnail": "graph.png",
+			"images": ["graph.png", "graph1.png"]
 		},
 		{
 			"route": "Takuzu",
 			"name": "Takuzu",
 			"date": "February 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "A chill takuzu puzzle with cool animations and lo-fi music",
+			"long_description": "Takuzu is played on a square board with NxN cells. Cells can be either true, false, or not yet assigned. The puzzle starts with some cells filled. The player's aim is to fill the rest of the board without breaking any rules. The player can can choose a board size between 2x2 and 20x20. The board generation is multithreaded. The player can choose from three game modes. The appearance of the game is customizable.",
 			"tags": [
 				"Rust",
 				"macroquad",
 				"itch.io"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/takuzu",
+			"live_link": "https://grem-ble.itch.io/takuzu",
+			"thumbnail": "takuzu.png",
+			"images": ["takuzu1.png", "takuzu2.png", "takuzu3.png", "takuzu4.png", "takuzu5.png", "takuzu6.png"]
 		},
 		{
 			"route": "Terrain",
