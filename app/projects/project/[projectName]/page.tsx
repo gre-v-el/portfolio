@@ -58,6 +58,16 @@ export default function TagName(
 			<Tags tags={data.tags.filter((t) => proj!.tags.includes(t.name))} allColored={true}/>
 			<p dangerouslySetInnerHTML={{__html: proj.long_description}}></p>
 
+			{proj.videos && (
+				<div className={style["videos"]}>
+					{proj.videos.map((vid) => {
+						return (
+							<video src={"/projects/"+vid} key={vid} controls></video>
+						);
+					})}
+				</div>
+			)}
+
 			<div className={style["images"]}>
 				{proj.images.map((img) => {
 					return (

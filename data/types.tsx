@@ -17,6 +17,7 @@ interface Project {
 	video_link?: string;
 	thumbnail: string;
 	images: string[];
+	videos?: string[];
 }
 
 interface ProjectsData {
