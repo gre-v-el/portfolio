@@ -62,3 +62,18 @@
 		display: block;
 	}
 }
+
+.main iframe {
+	margin: 40px 15%;
+	width: 70%; 
+	height: 500px; 
+	border: none;
+	box-shadow: 0 0 40px #fff3;
+	border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+	.main iframe {
+		display: none;
+	}
+}

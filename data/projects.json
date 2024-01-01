@@ -71,50 +71,46 @@
 			"route": "Portfolio",
 			"name": "This website",
 			"date": "December 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "A website showcasing my programming experience",
+			"long_description": "This website is a showcase of my programming experience. It is a Next.js app written in TypeScript. The website is hosted on GitHub Pages.",
 			"tags": [
 				"typescript",
 				"React",
 				"Next.js"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/portfolio",
+			"thumbnail": "portfolio.png",
+			"images": []
 		},
 		{
 			"route": "GridLsystems",
-			"name": "Grid L-systems",
+			"name": "Grid L-systems Evolution",
 			"date": "December 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "Edit, evolve and watch Grid L-Systems grow",
+			"long_description": "Grid LSystems are a concept that I came up with. They are very simmilar to a normal LSystem, but instead of existing in a smooth domain, they are defined on a grid. This software lets the user define a GLS and watch it grow, or define a goal for a GLS and let the software evolve it to match the goal with minimal amount of cells.",
 			"tags": [
 				"Rust",
 				"macroquad",
 				"egui"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/Grid-L-Systems",
+			"thumbnail": "gls.png",
+			"images": [],
+			"videos": ["gls1.mp4", "gls2.mp4", "gls3.mp4", "gls4.mp4", "gls5.mp4"]
 		},
 		{
 			"route": "CppFuncLengthCounter",
 			"name": "Cpp function length counter",
 			"date": "December 2023",
-			"short_description": "",
-			"long_description": "",
+			"short_description": "A tool to check on code encapsulation in C++ projects",
+			"long_description": "One of the university projects during the first semester was to create a CLI implementation of backgammon. The most annoying requirement was that the functions could not be longer than <em>555 characters</em>. The lecturer did not provide us with any tool to check the length of the functions, so I decided to create one myself. The tool is a website which accepts many <code>.cpp</code> files and displays a report of function lengths by file and by function. The user can also choose to display the functions' bodies to verify which characters were counted (white characters and comments are omitted). The tool is available on GitHub Pages.",
 			"tags": [
 				"javascript"
 			],
-			"repository": "",
-			"live_link": "",
-			"release_link": "",
-			"thumbnail": "",
-			"images": [""]
+			"repository": "https://github.com/gre-v-el/Cpp-Func-Length-Counter",
+			"live_link": "https://gre-v-el.github.io/Cpp-Func-Length-Counter/",
+			"thumbnail": "counter.png",
+			"images": ["counter1.png", "counter2.gif"]
 		},
 		{
 			"route": "ShellTexturing",
