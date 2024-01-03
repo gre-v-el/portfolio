@@ -64,26 +64,26 @@
 
 .reveal, .category-tile {
 	position: relative;
-	animation: reveal 2s;
+	animation: reveal 1.5s;
 	animation-fill-mode: both;
 }
 h1.reveal {
-	animation-delay: 0.5s;
+	animation-delay: 0s;
 }
 h2.reveal {
-	animation-delay: 1.5s;
+	animation-delay: 0.3s;
 }
 .category-tile:nth-child(1) {
-	animation-delay: 2.5s;
+	animation-delay: 0.6s;
 }
 .category-tile:nth-child(2) {
-	animation-delay: 3s;
+	animation-delay: 0.8s;
 }
 .category-tile:nth-child(3) {
-	animation-delay: 3.5s;
+	animation-delay: 1s;
 }
 .category-tile:nth-child(4) {
-	animation-delay: 4s;
+	animation-delay: 1.2s;
 }
 
 

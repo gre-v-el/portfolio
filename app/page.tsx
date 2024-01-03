@@ -10,7 +10,7 @@ export default function Home() {
 		tags.slice(6, 11),
 		tags.slice(11, 16),
 	];
-
+	
 	return (
 	<div id={styles["main"]}>
 		<div style={{flexGrow: 1}}/>
@@ -30,9 +30,9 @@ export default function Home() {
 
 		<div className={styles["tile-container"]}>
 			{tag_groups.map((group) => (
-				<div className={styles["category-tile"]}>
+				<div className={styles["category-tile"]} key={group[0].name}>
 					{group.map((tag) => (
-						<TechTile cls={styles['tile']} tag={tag}/>
+						<TechTile cls={styles['tile']} tag={tag} key={tag.name}/>
 					))}
 				</div>
 			))}
