@@ -57,6 +57,7 @@
 	right: 0;
 	bottom: 0;
 
+	cursor: pointer;
 	display: flex;
 
 	/* https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
@@ -69,17 +70,16 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
-
 	font-size: 50px;
 	padding: 10px;
+	color: #fff4;
 
-	cursor: pointer;
-
-	transition: font-size 0.3s, text-shadow 0.3s;
+	transition: font-size 0.3s, text-shadow 0.3s, color 0.3s;
 }
 .arrow:hover {
-	font-size: 70px;
+	font-size: 60px;
 	text-shadow: 0 0 5px #fff6;
+	color: #fff;
 }
 
 .gallery-big-img img, .gallery-big-img video {
@@ -106,7 +106,7 @@
 	border-radius: 5px;
 }
 .gallery-thumbs::-webkit-scrollbar {
-	height: 1rem;
+	height: 0.7rem;
 }
 .gallery-thumbs::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -138,6 +138,36 @@
 	border-radius: 5px;
 }
 
+#gallery-modal {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+
+	background-color: #0007;
+}
+.gallery-modal-content img, .gallery-modal-content video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90vw;
+	height: 90vh;
+	object-fit: contain;
+}
+.gallery-modal-content span {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 60px;
+	cursor: pointer;
+}
 
 
 .main p {

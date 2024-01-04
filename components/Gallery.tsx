@@ -36,6 +36,18 @@ export default function Gallery({
 		}
 	}
 
+	function showModal() {
+		let modal = document.getElementById(style["gallery-modal"]) as HTMLDivElement;
+		modal.style.display = "block";
+		setTimeout(() => modal.style.opacity = "1", 10);
+	}
+
+	function hideModal() {
+		let modal = document.getElementById(style["gallery-modal"]) as HTMLDivElement;
+		modal.style.opacity = "0";
+		setTimeout(() => modal.style.display = "none", 300);
+	}
+
 	return (
 		<div className={style["gallery"]}>
 			<div className={style["gallery-big-img"]}>
@@ -46,7 +58,8 @@ export default function Gallery({
 						onClick={() => setViewed(viewed_index - 1)}>
 						arrow_back_ios
 					</span>
-					<div style={{flex: 1}}/>
+					
+					<div style={{flex: 1}} onClick={showModal}/>
 					
 					<span 
 						className={style["arrow"] + " material-symbols-outlined"} 
@@ -65,6 +78,19 @@ export default function Gallery({
 						<VideoImage src={img}/>
 					</div>
 				))}
+			</div>
+			
+			<div id={style["gallery-modal"]} onClick={hideModal}>
+				<div className={style["gallery-modal-content"]}>
+					<VideoImage src={images[viewed_index]} vid_autostart={true}/>
+					
+					<span 
+						className="material-symbols-outlined"
+						onClick={hideModal}>
+						close
+					</span>
+				</div>
+				
 			</div>
 		</div>
 	);
