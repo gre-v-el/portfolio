@@ -22,4 +22,5 @@ interface Project {
 interface ProjectsData {
 	tags: Tag[];
 	projects: Project[];
+	featured: string[],
 }

@@ -104,6 +104,8 @@
 
 	background-color: #0006;
 	border-radius: 5px;
+
+	justify-content: center;
 }
 .gallery-thumbs::-webkit-scrollbar {
 	height: 0.7rem;

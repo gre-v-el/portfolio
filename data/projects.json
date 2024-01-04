@@ -331,7 +331,7 @@
 			],
 			"repository": "https://github.com/gre-v-el/Game-Of-Life-Editor-With-Stamps",
 			"thumbnail": "GoL.png",
-			"images": ["GoL1.gif", "GoL2.gif", "GoL3.gif", "GoL4.gif", "GoL5.gif", "GoL6.gif", "GoL7.gif", "GoL8.gif"]
+			"images": ["GoL1.gif", "GoL2.gif", "GoL3.gif", "GoL4.gif", "GoL5.gif", "GoL6.gif", "GoL7.gif"]
 		},
 		{
 			"route": "BarnesHut",
@@ -346,5 +346,8 @@
 			"thumbnail": "barnes-hut.png",
 			"images": ["barnes-hut1.png", "barnes-hut2.png", "barnes-hut3.png", "barnes-hut4.png"]
 		}
+	],
+	"featured": [
+		"Attractors", "Rubbish", "Mandelbrot", "BarnesHut"
 	]
 }

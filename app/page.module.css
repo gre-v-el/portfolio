@@ -1,14 +1,14 @@
 /* Main text positioning */
-#main {
+.fullscreen-panel {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100vh;
 }
-#main-row {
+.main-row {
 	display: flex;
 }
-#main-cell {
+.main-cell {
 	display: inline-block;
 	padding: 15px;
 }
@@ -96,5 +96,8 @@ h2.reveal {
 	.tile img {
 		width: 60px;
 		height: 60px;
+	}
+	.fullscreen-panel {
+		min-height: calc(100vh - 70px);
 	}
 }

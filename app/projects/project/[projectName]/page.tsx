@@ -62,32 +62,10 @@ export default function TagName(
 
 			{
 				proj.images.length > 0 &&
-				<Gallery style={style} images={proj.images}/>
+					<Gallery style={style} images={proj.images}/>
 			}
-
-
-			{/* {proj.videos && (
-				<div className={style["videos"]}>
-					{proj.videos.map((vid) => {
-						return (
-							<video src={"/projects/"+vid} key={vid} controls></video>
-						);
-					})}
-				</div>
-			)}
-
-			<div className={style["images"]}>
-				{proj.images.map((img) => {
-					return (
-						<img src={"/projects/"+img} key={img} />
-					);
-				})}
-			</div> */}
-
 			{
-				proj.route == "Portfolio" && (
-					<iframe src="/"/>
-				)
+				proj.route == "Portfolio" && <iframe src="/"/>
 			}
 		</div>
 	);
