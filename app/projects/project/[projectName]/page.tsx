@@ -60,7 +60,10 @@ export default function TagName(
 
 			<p dangerouslySetInnerHTML={{__html: proj.long_description}}></p>
 
-			<Gallery style={style} images={proj.images}/>
+			{
+				proj.images.length > 0 &&
+				<Gallery style={style} images={proj.images}/>
+			}
 
 
 			{/* {proj.videos && (
