@@ -5,12 +5,12 @@
 	--primary: #ff2f00;
 	--secondary: #9b6f04;
 	--accent: #f9e61d;
-
+	
 	--text-rgb: 255, 255, 255;
-    --background-rgb: 19, 5, 1;
-    --primary-rgb: 255, 47, 0;
-    --secondary-rgb: 155, 111, 4;
-    --accent-rgb: 249, 230, 29;
+	--background-rgb: 19, 5, 1;
+	--primary-rgb: 255, 47, 0;
+	--secondary-rgb: 155, 111, 4;
+	--accent-rgb: 249, 230, 29;
 }
 
 /* Background and gradient animation */
@@ -37,7 +37,7 @@ body {
 	
 	background-size: 180vw 100vh;
 	background-attachment: fixed;
-
+	
 	animation: gradient 9s ease infinite;
 }
 
@@ -145,7 +145,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
+	
 	transform-origin: top;
 	background-color: rgba(var(--background-rgb), 0.8);
 	border-bottom: 2px solid rgba(var(--primary-rgb), 0.5);
@@ -167,13 +167,13 @@ p {
 /* navigation buttons */
 .nav-button {
 	position: relative;
-
+	
 	color: var(--text);
-
+	
 	height: 100px;
 	width: 100px;
 	margin: 20px 10px;
-
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -222,7 +222,7 @@ p {
 	font-weight: bold;
 	transition: 0.3s;
 	color: #fff;
-
+	
 	display: flex;
 	align-items: center;
 	column-gap: 5px;
@@ -250,7 +250,7 @@ p {
 	padding: 15px;
 	margin: 15px;
 	border-radius: 10px;
-
+	
 	display: flex;
 	flex-direction: column;
 }

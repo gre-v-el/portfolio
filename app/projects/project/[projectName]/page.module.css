@@ -57,25 +57,34 @@
 	margin-top: 30px;
 
 	display: flex;
+	padding: 5px 5px 0 0;
 	
 	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-	
+	overflow-y: hidden;
+	/* scroll-snap-type: x mandatory; */
+	scroll-behavior: smooth;
 }
-
+.gallery-thumbs::-webkit-scrollbar {
+	height: 1rem;
+}
 .gallery-thumbs::-webkit-scrollbar-track {
-	background-color: red;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.gallery-thumbs::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+	border-radius: 10px;
 }
 
 
 .gallery-thumbs img, .gallery-thumbs video {
 	height: 80px;
-	width: auto;
-	aspect-ratio: 4 / 3;
+	width: 100px;
 	object-fit: cover;
 	cursor: pointer;
 
-	padding: 3px;
+	box-sizing: border-box;
+	padding-left: 5px;
 
 	scroll-snap-align: start;
 }
