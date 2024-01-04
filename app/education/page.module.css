@@ -1,0 +1,8 @@
+.experience-row {
+	background-color: #f3e0e0;
+	padding: 40px;
+	margin: 30px;
+	width: calc(100% - 140px);
+	border-radius: 10px;
+	color: black;
+}
