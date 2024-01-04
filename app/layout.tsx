@@ -23,7 +23,9 @@ export default function RootLayout({
 			<MobileNav/>
 			<div id="container">
 				<nav id="desktop-nav">
-					<NavButtonSet/>
+					<div className="desktop-nav-buttons">
+						<NavButtonSet/>
+					</div>
 				</nav>
 				<main>
 					{children}

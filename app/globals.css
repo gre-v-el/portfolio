@@ -71,6 +71,10 @@ p {
 	width: 120px;
 	border-right: 1px solid rgba(var(--primary-rgb), 0.2);
 }
+.desktop-nav-buttons {
+	position: sticky;
+	top: 20px;
+}
 
 #mobile-nav {
 	position: fixed;
@@ -259,6 +263,24 @@ p {
 
 .tags a {
 	text-decoration: none;
+}
+
+
+/* sections */
+.section-flex {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+.section-flex h2 {
+	padding: 0 20px;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+.section-line {
+	flex-grow: 1;
+	height: 1px;
+	background-color: var(--text);
 }
 
 /* responsiveness */
