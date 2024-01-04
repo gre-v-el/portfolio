@@ -95,8 +95,7 @@
 			],
 			"repository": "https://github.com/gre-v-el/Grid-L-Systems",
 			"thumbnail": "gls.png",
-			"images": [],
-			"videos": ["gls1.mp4", "gls2.mp4", "gls3.mp4", "gls4.mp4", "gls5.mp4"]
+			"images": ["gls1.mp4", "gls2.mp4", "gls3.mp4", "gls4.mp4", "gls5.mp4"]
 		},
 		{
 			"route": "CppFuncLengthCounter",
@@ -186,8 +185,7 @@
 			],
 			"repository": "https://github.com/gre-v-el/Chaotic-Attractors",
 			"thumbnail": "attractors.png",
-			"images": ["attractors1.png", "attractors2.gif", "attractors3.png", "attractors4.png", "attractors5.png", "attractors6.png", "attractors7.gif"],
-			"videos": ["attractors8.mp4", "attractors9.mp4"]
+			"images": ["attractors8.mp4", "attractors9.mp4", "attractors1.png", "attractors2.gif", "attractors3.png", "attractors4.png", "attractors5.png", "attractors6.png", "attractors7.gif"]
 		},
 		{
 			"route": "Rubbish",
@@ -243,8 +241,7 @@
 			],
 			"repository": "https://github.com/gre-v-el/Graph-Display",
 			"thumbnail": "graph.png",
-			"images": ["graph.png", "graph1.png"],
-			"videos": ["graph2.mp4"]
+			"images": ["graph2.mp4", "graph.png", "graph1.png"]
 		},
 		{
 			"route": "Takuzu",

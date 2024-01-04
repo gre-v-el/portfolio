@@ -4,6 +4,7 @@ import Tags from '@/components/Tags';
 import style from './page.module.css';
 import { notFound } from "next/navigation";
 import Image from 'next/image';
+import Gallery from '@/components/Gallery';
 
 const data: ProjectsData = require('../../../../data/projects.json');
 
@@ -56,9 +57,13 @@ export default function TagName(
 			</div>
 
 			<Tags tags={data.tags.filter((t) => proj!.tags.includes(t.name))} allColored={true}/>
+
 			<p dangerouslySetInnerHTML={{__html: proj.long_description}}></p>
 
-			{proj.videos && (
+			<Gallery style={style} images={proj.images}/>
+
+
+			{/* {proj.videos && (
 				<div className={style["videos"]}>
 					{proj.videos.map((vid) => {
 						return (
@@ -74,7 +79,7 @@ export default function TagName(
 						<img src={"/projects/"+img} key={img} />
 					);
 				})}
-			</div>
+			</div> */}
 
 			{
 				proj.route == "Portfolio" && (
