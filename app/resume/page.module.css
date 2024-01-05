@@ -2,11 +2,14 @@
 	width: 100%;
 
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+
+	margin-top: 50px;
 }
 .download-tile {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	background-color: rgba(var(--primary-rgb), 0.1);
 
 	font-size: 30px;
@@ -15,6 +18,9 @@
 	border: 1px solid rgba(var(--primary-rgb), 0.4);
 	border-radius: 50px;
 	transition: background-color 0.3s, box-shadow 0.6s;
+
+	text-decoration: none;
+	color: var(--text);
 }
 .download-tile:hover {
 	cursor: pointer;
@@ -41,6 +47,10 @@
 }
 .school h2 {
 	margin-top: 0;
+}
+.school a {
+	text-decoration: none;
+	color: var(--text);
 }
 
 .research {
@@ -81,5 +91,21 @@
 	}
 	.download-tile span {
 		font-size: 30px;
+	}
+	.school {
+		box-sizing: border-box;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.research {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.research .icon {
+		font-size: 40px;
+	}
+	.title {
+		text-align: left;
 	}
 }

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function School({
 	name,
 	degree,
@@ -10,7 +12,7 @@ export default function School({
 	degree?: string,
 	major: string,
 	time: string,
-	research?: [{title: string, src: string}],
+	research?: [{title: string, href: string}],
 	styles: any
 }) {
 	return (
@@ -27,16 +29,15 @@ export default function School({
 			</div>
 			{research && 
 				<>
-					<p>My research:</p>
 					{research.map((r) => 
-						<div className={styles["research"]}>
+						<a className={styles["research"]} href={r.href} target="_blank">
 							<span className={"material-symbols-outlined " + styles["icon"]}>
 								description
 							</span>
 							<div className={styles["title"]}>
 								"{r.title}"
 							</div>
-						</div>
+						</a>
 					)}
 				</>
 			}

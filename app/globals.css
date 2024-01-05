@@ -282,6 +282,18 @@ p {
 	background-color: var(--text);
 }
 
+
+/* footer */
+footer {
+	padding: 30px;
+	/* background-color: rgba(var(--primary-rgb), 0.1); */
+	border-top: 1px solid rgba(var(--primary-rgb), 0.2);
+	color: rgba(var(--text-rgb), 0.5);
+	text-align: center; 
+}
+
+
+
 .not-selectable {
 	/* https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
 	-webkit-user-select: none; /* Safari */

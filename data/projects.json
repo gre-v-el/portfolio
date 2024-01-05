@@ -192,7 +192,7 @@
 			"name": "RUBBISH",
 			"date": "April 2023",
 			"short_description": "<b>R</b>obotic <b>U</b>tility <b>B</b>arely <b>B</b>eneficial <b>I</b>n <b>S</b>erving <b>H</b>umans",
-			"long_description": "This is my attempt at LLMs (although it turned out to be a <b>L</b>ittle <b>L</b>anguege <b>M</b>odel. It reads a corpus of text, analyzes the frequencies of sequences of letters and tokenizes the whole corpus. It then generates a succession tree - a tree representing the sequences of tokens in the corpus, together with their frequencies. The program can then use the tree to generate new text, which is similar to the original corpus.",
+			"long_description": "This is my attempt at LLMs (although it turned out to be a <b>L</b>ittle <b>L</b>anguege <b>M</b>odel). It reads a corpus of text, analyzes the frequencies of sequences of letters and tokenizes the whole corpus. It then generates a succession tree - a tree representing the sequences of tokens in the corpus, together with their frequencies. The program can then use the tree to generate new text, which is similar to the original corpus.",
 			"tags": [
 				"Rust"
 			],

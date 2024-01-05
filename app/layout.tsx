@@ -29,6 +29,11 @@ export default function RootLayout({
 				</nav>
 				<main>
 					{children}
+					<footer>
+						Gabriel Myszkier
+						<br/>
+						myszkier.gabriel@gmail.com
+					</footer>
 				</main>
 			</div>
 		</body>
