@@ -1,0 +1,85 @@
+.download-container {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-around;
+}
+.download-tile {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(var(--primary-rgb), 0.1);
+
+	font-size: 30px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgba(var(--primary-rgb), 0.4);
+	border-radius: 50px;
+	transition: background-color 0.3s, box-shadow 0.6s;
+}
+.download-tile:hover {
+	cursor: pointer;
+	background-color: rgba(var(--primary-rgb), 0.2);
+	box-shadow: 5px 5px 20px black;
+}
+.download-tile span {
+	font-size: 40px;
+}
+
+.container {
+	margin: 50px;
+}
+
+.school {
+	margin: 15px 50px;
+	padding: 20px;
+	background-color: #fff2;
+	border-radius: 10px;
+}
+.headings {
+	display: flex;
+	justify-content: center;
+}
+.school h2 {
+	margin-top: 0;
+}
+
+.research {
+	display: flex;
+	align-items: center;
+	margin: 5px;
+	padding: 15px;
+	background-color: #fff2;
+	border-radius: 15px;
+	transition: background-color 0.3s;
+}
+.research:hover {
+	cursor: pointer;
+	background-color: #fff4;
+}
+.research .icon {
+	font-size: 60px;
+}
+.title {
+	text-align: right;
+	flex-grow: 1;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 60%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 800px) {
+	.download-container {
+		height: 100px;
+		position: relative;
+	}
+	.download-tile {
+		font-size: 20px;
+	}
+	.download-tile span {
+		font-size: 30px;
+	}
+}

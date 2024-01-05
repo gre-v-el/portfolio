@@ -22,7 +22,7 @@ export default function RootLayout({
 		<body className={font.className}>
 			<MobileNav/>
 			<div id="container">
-				<nav id="desktop-nav">
+				<nav id="desktop-nav" className='not-selectable'>
 					<div className="desktop-nav-buttons">
 						<NavButtonSet/>
 					</div>

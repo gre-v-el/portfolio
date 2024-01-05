@@ -20,7 +20,7 @@ export default function Home() {
 	};
 
 	return (
-	<div id={styles["main"]}>
+	<div id={styles["main"]} className='not-selectable'>
 		<div className={styles["fullscreen-panel"]}>
 			<div style={{flexGrow: 1}}/>
 
@@ -56,7 +56,7 @@ export default function Home() {
 				<div style={{flexGrow: 1}}/>
 				
 				<div className={styles["main-cell"]}>
-					<h1>featured projects</h1>
+					<h1>pinned projects</h1>
 				</div>
 
 				<div style={{flexGrow: 2}}/>

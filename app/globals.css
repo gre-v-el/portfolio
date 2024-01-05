@@ -84,7 +84,7 @@ p {
 	width: 100vw;
 }
 .mobile-nav-padder {
-	height: 70px;
+	height: 55px;
 }
 
 #hamburger-icon {
@@ -282,10 +282,17 @@ p {
 	background-color: var(--text);
 }
 
+.not-selectable {
+	/* https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
 /* responsiveness */
 @media (max-width: 800px) {
 	main {
-		min-height: calc(100vh - 70px);
+		min-height: calc(100vh - 55px);
 	}
 	#desktop-nav {
 		display: none;

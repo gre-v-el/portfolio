@@ -52,7 +52,7 @@ export default function Gallery({
 		<div className={style["gallery"]}>
 			<div className={style["gallery-big-img"]}>
 				<VideoImage src={images[viewed_index]} vid_autostart={true}/>
-				<div className={style["arrows"]}>
+				<div className={style["arrows"] + " not-selectable"}>
 					<span 
 						className={style["arrow"] + " material-symbols-outlined"} 
 						onClick={() => setViewed(viewed_index - 1)}>

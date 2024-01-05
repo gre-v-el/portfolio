@@ -98,6 +98,6 @@ h2.reveal {
 		height: 60px;
 	}
 	.fullscreen-panel {
-		min-height: calc(100vh - 70px);
+		min-height: calc(100vh - 55px);
 	}
 }
