@@ -7,6 +7,7 @@ export default function NavButtonSet() {
 			<NavButton href='/' icon='home' text='Home'/>
 			<NavButton href='/projects' icon='code_blocks' text='Projects'/>
 			<NavButton href='/resume' icon='description' text='Resume'/>
+			<NavButton href='/links' icon='link' text='Links'/>
 		</>
 	);
 }
