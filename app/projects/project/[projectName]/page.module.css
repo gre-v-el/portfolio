@@ -86,8 +86,7 @@
 
 
 .gallery-thumbs {
-	box-sizing: border-box;
-	height: 108px;
+	height: 93px;
 	margin-top: 10px;
 
 	display: flex;
@@ -100,7 +99,7 @@
 	background-color: #0006;
 	border-radius: 5px;
 
-	justify-content: center;
+	/* justify-content: center; */
 }
 .gallery-thumbs::-webkit-scrollbar {
 	height: 0.7rem;

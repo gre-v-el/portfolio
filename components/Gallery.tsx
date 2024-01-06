@@ -52,33 +52,38 @@ export default function Gallery({
 		<div className={style["gallery"]}>
 			<div className={style["gallery-big-img"]}>
 				<VideoImage src={images[viewed_index]} vid_autostart={true}/>
-				<div className={style["arrows"] + " not-selectable"}>
-					<span 
-						className={style["arrow"] + " material-symbols-outlined"} 
-						onClick={() => setViewed(viewed_index - 1)}>
-						arrow_back_ios
-					</span>
-					
-					<div style={{flex: 1}} onClick={showModal}/>
-					
-					<span 
-						className={style["arrow"] + " material-symbols-outlined"} 
-						onClick={() => setViewed(viewed_index + 1)}>
-						arrow_forward_ios
-					</span>
-				</div>
-			</div>
-			<div className={style["gallery-thumbs"]} ref={thumbsRef}>
-				{images.map((img, index) => (
-					<div 
-						className={index == viewed_index ? style["selected"] : null}
-						key={index}
-						onClick={() => setViewed(index)}
-					>
-						<VideoImage src={img}/>
+
+				{images.length > 1 &&
+					<div className={style["arrows"] + " not-selectable"}>
+						<span 
+							className={style["arrow"] + " material-symbols-outlined"} 
+							onClick={() => setViewed(viewed_index - 1)}>
+							arrow_back_ios
+						</span>
+						
+						<div style={{flex: 1}} onClick={showModal}/>
+						
+						<span 
+							className={style["arrow"] + " material-symbols-outlined"} 
+							onClick={() => setViewed(viewed_index + 1)}>
+							arrow_forward_ios
+						</span>
 					</div>
-				))}
+				}
 			</div>
+			{images.length > 1 &&
+				<div className={style["gallery-thumbs"]} ref={thumbsRef}>
+					{images.map((img, index) => (
+						<div 
+							className={index == viewed_index ? style["selected"] : null}
+							key={index}
+							onClick={() => setViewed(index)}
+						>
+							<VideoImage src={img}/>
+						</div>
+					))}
+				</div>
+			}
 			
 			<div id={style["gallery-modal"]} onClick={hideModal}>
 				<div className={style["gallery-modal-content"]}>
