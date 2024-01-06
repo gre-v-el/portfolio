@@ -2,8 +2,11 @@ import ProjectTiles from '@/components/ProjectTiles';
 import styles from './page.module.css'
 import TechTile from '@/components/TechTile';
 import data from '@/data/projects.json';
+import hit from '@/lib/counting';
 
 export default function Home() {
+	hit('index');
+
 	let tags = data.tags;
 	let tag_groups = [
 		tags.slice(0, 4),

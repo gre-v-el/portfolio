@@ -1,5 +1,4 @@
-* counters
 * check for typos
 * test on a bystander
-* publish + add links
+* publish + link everywhere
 * write readme

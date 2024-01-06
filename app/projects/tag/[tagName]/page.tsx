@@ -4,12 +4,15 @@ import style from '../../page.module.css';
 import Tags from "@/components/Tags";
 import { notFound, useRouter } from "next/navigation";
 import ProjectTiles from "@/components/ProjectTiles";
+import hit from '@/lib/counting';
 
 const data: ProjectsData = require('../../../../data/projects.json');
 
 export default function TagName(
 	{ params }: { params: { tagName: string } }
 ) {
+	hit('tag');
+
 	let used_tag = data.tags.find((tag) => (tag.route === undefined ? tag.name : tag.route) === params.tagName);
 	if(used_tag === undefined) {
 		notFound();
@@ -19,7 +22,8 @@ export default function TagName(
 	let displayedData: ProjectsData = {
 		tags: data.tags,
 		projects: displayed,
-	}
+		featured: []
+	};
 
 	return (
 		<div className={style["main"]}>

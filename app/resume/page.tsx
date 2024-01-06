@@ -1,19 +1,24 @@
+'use client';
+
 import Section from '@/components/Section';
 import styles from './page.module.css';
 import School from '@/components/School';
 import Link from 'next/link';
+import hit from '@/lib/counting';
 
 export default function Resume() {
+	hit('resume');
+
 	return (
 		<>
 			<div className={styles["download-container"]}>
-				<Link className={styles["download-tile"]} target="_blank" href="/documents/Gabriel Myszkier Resume.pdf">
+				<Link className={styles["download-tile"]} target="_blank" href="/documents/Gabriel Myszkier Resume.pdf" onClick={() => hit("downloadEn")}>
 					<span className='material-symbols-outlined'>
 						download
 					</span>
 					Download pdf (En)
 				</Link>
-				<Link className={styles["download-tile"]} target="_blank" href="/documents/Gabriel Myszkier CV.pdf">
+				<Link className={styles["download-tile"]} target="_blank" href="/documents/Gabriel Myszkier CV.pdf" onClick={() => hit("downloadPl")}>
 					<span className='material-symbols-outlined'>
 						download
 					</span>

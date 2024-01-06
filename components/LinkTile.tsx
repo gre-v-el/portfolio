@@ -1,5 +1,6 @@
 'use client';
 
+import hit from "@/lib/counting";
 import Image from "next/image";
 import Link from "next/link";
 import { Ref, RefObject, useRef } from "react";
@@ -23,6 +24,8 @@ export default function LinkTile({
 }) {
 	function clipboard() {
 		if (copy) {
+			hit('copy_' + name);
+
 			navigator.clipboard.writeText(copy);
 
 			if(!notification_ref!.current?.classList.contains(styles["show"])) {
@@ -49,7 +52,7 @@ export default function LinkTile({
 
 	return (
 		href ? 
-			<Link href={href} className={styles["link-tile"]} target="_blank">
+			<Link href={href} className={styles["link-tile"]} target="_blank" onClick={() => hit("link_" + name.replaceAll(" ", "").replaceAll(".", ""))}>
 				{contents}
 			</Link> :
 			<div className={styles["link-tile"]} onClick={clipboard}>
