@@ -26,6 +26,9 @@
 	display: flex;
 	gap: 10px;
 }
+.category-tile a {
+	text-decoration: none;
+}
 
 .tile {
 	text-align: center;

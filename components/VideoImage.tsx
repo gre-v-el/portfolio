@@ -13,8 +13,8 @@ export default function VideoImage({
 	return src.endsWith(".mp4") ? 
 	(
 		vid_autostart ?
-			<video className={className} src={"/projects/"+src} autoPlay loop muted controls/> :
-			<video className={className} src={"/projects/"+src}/>
+			<video className={className} src={basePath + "/projects/"+src} autoPlay loop muted controls/> :
+			<video className={className} src={basePath + "/projects/"+src}/>
 	) : (
 		<img className={className} src={basePath + "/projects/"+src} alt="screenshot"/>
 	);

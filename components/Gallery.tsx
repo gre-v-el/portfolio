@@ -27,8 +27,6 @@ export default function Gallery({
 		let target_start = index * 100;
 		let target_end = target_start + 105;
 
-		console.log(target_start, target_end, left, width);
-
 		if (target_start < left) {
 			thumbsRef.current.scrollLeft = target_start;
 		} else if (target_end > left + width) {

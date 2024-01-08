@@ -16,7 +16,7 @@ export default function Resume() {
 					<span className='material-symbols-outlined'>
 						download
 					</span>
-					Download pdf (En)
+					Download pdf (EN)
 				</Link>
 				<Link className={styles["download-tile"]} target="_blank" href="/documents/Gabriel Myszkier CV.pdf" onClick={() => hit("downloadPl")}>
 					<span className='material-symbols-outlined'>
