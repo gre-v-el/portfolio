@@ -3,7 +3,8 @@
 */
 const nextConfig = {
 	output: 'export',
-	images: { unoptimized: true }
+	images: { unoptimized: true },
+	distDir: 'docs',
 };
   
 export default nextConfig;
