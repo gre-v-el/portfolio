@@ -28,7 +28,7 @@ export default function NavButton({
 
 	useEffect(() => {
 		setActive(isActive(href, path));
-	}, [path, href]);
+	}, [path]);
 
 	return (
 		<Link className={"nav-button" + (active ? " active" : "")} href={href}>
