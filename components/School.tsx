@@ -29,8 +29,8 @@ export default function School({
 			</div>
 			{research && 
 				<>
-					{research.map((r) => 
-						<a className={styles["research"]} href={r.href} target="_blank">
+					{research.map((r, i) => 
+						<a className={styles["research"]} href={r.href} target="_blank" key={i}>
 							<span className={"material-symbols-outlined " + styles["icon"]}>
 								description
 							</span>
