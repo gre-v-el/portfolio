@@ -8,7 +8,7 @@ const data: ProjectsData = require('../../../../data/projects.json');
 
 export function generateStaticParams() {
 	return data.tags.map((tag) => ({
-		tagName: tag.name,
+		tagName: tag.route ? tag.route : tag.name,
 	}))
 }
 
