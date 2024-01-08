@@ -81,16 +81,19 @@
 	}
 }
 
-@media (max-width: 800px) {
-	.download-container {
-		height: 100px;
-		position: relative;
-	}
+@media (max-width: 1000px) {
 	.download-tile {
 		font-size: 20px;
 	}
 	.download-tile span {
 		font-size: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	.download-container {
+		height: 100px;
+		position: relative;
 	}
 	.school {
 		box-sizing: border-box;

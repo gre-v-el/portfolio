@@ -148,7 +148,7 @@
 			"name": "GalaxyBlast",
 			"date": "July-August 2023",
 			"short_description": "A mobile game about a spaceship shooting asteroids",
-			"long_description": "Inspired by the classic arcade game Asteroids, GalaxyBlast is a mobile game about a spaceship shooting asteroids of different classes. The player beats waves of asteroids to earn shards, unlock achievements, buy and upgrade ships, and unlock new locations. The game is available on Google Play.",
+			"long_description": "Inspired by the classic arcade game Asteroids, GalaxyBlast is a mobile game about a spaceship shooting asteroids of different types. The player beats waves of asteroids to earn shards, unlock achievements, buy and upgrade ships, and unlock new locations. The game is available on Google Play.",
 			"tags": [
 				"Flutter",
 				"Flame",
@@ -192,7 +192,7 @@
 			"name": "RUBBISH",
 			"date": "April 2023",
 			"short_description": "<b>R</b>obotic <b>U</b>tility <b>B</b>arely <b>B</b>eneficial <b>I</b>n <b>S</b>erving <b>H</b>umans",
-			"long_description": "This is my attempt at LLMs (although it turned out to be a <b>L</b>ittle <b>L</b>anguege <b>M</b>odel). It reads a corpus of text, analyzes the frequencies of sequences of letters and tokenizes the whole corpus. It then generates a succession tree - a tree representing the sequences of tokens in the corpus, together with their frequencies. The program can then use the tree to generate new text, which is similar to the original corpus.",
+			"long_description": "This is my take at LLMs (although it turned out to be a <b>L</b>ittle <b>L</b>anguege <b>M</b>odel). It reads a corpus of text, analyzes the frequencies of sequences of letters and tokenizes the whole corpus. It then generates a succession tree - a tree representing the sequences of tokens in the corpus, together with their frequencies. The program can then use the tree to generate new text, which is similar to the original corpus.",
 			"tags": [
 				"Rust"
 			],
@@ -205,7 +205,7 @@
 			"name": "Infinite DLA",
 			"date": "March 2023",
 			"short_description": "Unconstrained, modifiable and fast Diffusion Limited Aggregation simulation.",
-			"long_description": "The user gets to set the basic parameters of the simulation, concerning the visuals, and also some advanced parameters such as world-to-aggregate ratio and bin sizing.<br><br>The simulation zooms out as the aggregate grows. It does not slow down significantly with the size of the aggregate, thanks to the dynamic binning algorithm.",
+			"long_description": "The software simulates Diffusion Limimted Aggregation by simulating particles moving in a circular container around the aggregate and sticking to it. The user gets to set the basic parameters of the simulation, concerning the visuals, and also some advanced parameters such as world-to-aggregate ratio and bin sizing.<br><br>The simulation zooms out as the aggregate grows. The performance does not degrade significantly with the size of the aggregate, thanks to the dynamic binning algorithm.",
 			"tags": [
 				"Rust",
 				"macroquad",
@@ -248,7 +248,7 @@
 			"name": "Takuzu",
 			"date": "February 2023",
 			"short_description": "A chill takuzu puzzle with cool animations and lo-fi music",
-			"long_description": "Takuzu is played on a square board with NxN cells. Cells can be either true, false, or not yet assigned. The puzzle starts with some cells filled. The player's aim is to fill the rest of the board without breaking any rules. The player can can choose a board size between 2x2 and 20x20. The board generation is multithreaded. The player can choose from three game modes. The appearance of the game is customizable.",
+			"long_description": "Takuzu is played on a square board with NxN cells. Cells can be either true, false, or not yet assigned. The puzzle starts with some cells filled. The player's aim is to fill the rest of the board without breaking any rules. The player can choose a board size between 2x2 and 20x20. The board generation is multithreaded. The player can choose from three game modes. The appearance of the game is customizable.",
 			"tags": [
 				"Rust",
 				"macroquad",
@@ -296,7 +296,7 @@
 			"name": "Trutagen",
 			"date": "March 2022",
 			"short_description": "<b>Tru</b>th <b>ta</b>ble <b>gen</b>erator.",
-			"long_description": "An easy to use logic expression parser and evaluator made as one of my first Rust learning projects. The user inputs an expression, the program first tokenizes it, then converts it to reverse polish notation, and finally evaluates it. Example input and output:<br><pre>not a xor b and (c or a)\n\n ┏━━━━━┳━━━━━┳━━━━━┳━━━━━━━━━┓\n ┃  A  ┃  B  ┃  C  ┃ result  ┃\n ┣━━━━━╋━━━━━╋━━━━━╋━━━━━━━━━┫\n ┃  0  ┃  0  ┃  0  ┃    1    ┃\n ┃  0  ┃  0  ┃  1  ┃    1    ┃\n ┃  0  ┃  1  ┃  0  ┃    1    ┃\n ┃  0  ┃  1  ┃  1  ┃    0    ┃\n ┃  1  ┃  0  ┃  0  ┃    0    ┃\n ┃  1  ┃  0  ┃  1  ┃    0    ┃\n ┃  1  ┃  1  ┃  0  ┃    1    ┃\n ┃  1  ┃  1  ┃  1  ┃    1    ┃\n ┗━━━━━┻━━━━━┻━━━━━┻━━━━━━━━━┛\n   NOT A XOR B AND ( C OR A )</pre>",
+			"long_description": "An easy to use logic expression parser and evaluator made as one of my first Rust learning projects. The user inputs an expression, the program first tokenizes it, then converts it to reverse polish notation, and finally evaluates it for all possible values of variables.",
 			"tags": [
 				"Rust"
 			],

@@ -98,8 +98,6 @@
 
 	background-color: #0006;
 	border-radius: 5px;
-
-	/* justify-content: center; */
 }
 .gallery-thumbs::-webkit-scrollbar {
 	height: 0.7rem;
@@ -170,6 +168,13 @@
 	padding: 0 100px;
 }
 
+@media (min-width: 1200px) {
+	.main p {
+		width: 60%;
+		margin: 1em auto;
+		padding: 0;
+	}
+}
 @media (max-width: 800px) {
 	.main p {
 		padding: 0 10px;
