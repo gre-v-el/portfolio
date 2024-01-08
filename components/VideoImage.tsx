@@ -1,3 +1,4 @@
+import basePath from "@/lib/basePath";
 import Image from "next/image";
 
 export default function VideoImage({
@@ -15,6 +16,6 @@ export default function VideoImage({
 			<video className={className} src={"/projects/"+src} autoPlay loop muted controls/> :
 			<video className={className} src={"/projects/"+src}/>
 	) : (
-		<img className={className} src={"/projects/"+src} alt="screenshot"/>
+		<img className={className} src={basePath + "/projects/"+src} alt="screenshot"/>
 	);
 }

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Image from 'next/image';
 import Gallery from '@/components/Gallery';
 import hit from '@/lib/counting';
+import basePath from '@/lib/basePath';
 
 const data: ProjectsData = require('../../../../data/projects.json');
 
@@ -34,28 +35,28 @@ export default function ProjectName(
 					<div className={style["links"]}>
 						{proj.repository && (
 							<a href={proj.repository} target="_blank">
-								<Image src="/tech_icons/github.png" alt="github icon" width={24} height={24}/>
+								<Image src={basePath + "/tech_icons/github.png"} alt="github icon" width={24} height={24}/>
 								See code
 							</a>
 						)}
 
 						{proj.live_link && (
 							<a href={proj.live_link} target="_blank">
-								<Image src="/tech_icons/web.png" alt="github icon" width={24} height={24}/>
+								<Image src={basePath + "/tech_icons/web.png"} alt="github icon" width={24} height={24}/>
 								See website
 							</a>
 						)}
 						
 						{proj.release_link && (
 							<a href={proj.release_link} target="_blank">
-								<Image src="/tech_icons/github.png" alt="github icon" width={24} height={24}/>
+								<Image src={basePath + "/tech_icons/github.png"} alt="github icon" width={24} height={24}/>
 								See release
 							</a>
 						)}
 						
 						{proj.video_link && (
 							<a href={proj.video_link} target="_blank">
-								<Image src="/tech_icons/youtube.png" alt="youtube icon" width={24} height={24}/>
+								<Image src={basePath + "/tech_icons/youtube.png"} alt="youtube icon" width={24} height={24}/>
 								See video
 							</a>
 						)}

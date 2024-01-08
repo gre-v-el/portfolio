@@ -1,5 +1,6 @@
 'use client';
 
+import basePath from "@/lib/basePath";
 import hit from "@/lib/counting";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,7 +39,7 @@ export default function LinkTile({
 	}
 
 	let contents = <>
-		{src && <Image src={"/tech_icons/" + src} width={100} height={100} alt={name + " icon"}/>}
+		{src && <Image src={basePath + "/tech_icons/" + src} width={100} height={100} alt={name + " icon"}/>}
 
 		{material && <span className="material-symbols-outlined">{material}</span>}
 

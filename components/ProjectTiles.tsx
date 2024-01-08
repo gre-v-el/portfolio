@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Tags from "./Tags";
 import Image from "next/image";
+import basePath from "@/lib/basePath";
 
 export default function ProjectTiles(
 	{
@@ -14,8 +15,7 @@ export default function ProjectTiles(
 			{data.projects.map((project) => (
 				<Link href={"/projects/project/" + project.route} key={project.route}>
 					<div className="project">
-						<Image src={"/projects/" + project.thumbnail} alt={project.name + " thumbnail"} width={600} height={400}/>
-						{/* <img src={"/projects/" + project.thumbnail} /> */}
+						<Image src={basePath + "/projects/" + project.thumbnail} alt={project.name + " thumbnail"} width={600} height={400}/>
 						<h3>{project.name}</h3>
 						<h4>{project.date}</h4>
 
