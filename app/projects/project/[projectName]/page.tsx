@@ -1,5 +1,3 @@
-'use client';
-
 import Tags from '@/components/Tags';
 import style from './page.module.css';
 import { notFound } from "next/navigation";
@@ -8,6 +6,12 @@ import Gallery from '@/components/Gallery';
 import hit from '@/lib/counting';
 
 const data: ProjectsData = require('../../../../data/projects.json');
+
+export function generateStaticParams() {
+	return data.projects.map((project) => ({
+		projectName: project.route,
+	}))
+}
 
 export default function ProjectName(
 	{ params }: { params: { projectName: string } }
