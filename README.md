@@ -3,4 +3,7 @@
 
 Includes my resume, education, contact and most importantly a catalog of my projects.
 
-## See it [here](#)
+## See it [here](https://gre-v-el.github.io/portfolio)
+
+![home](./readme_imgs/home.png)
+![projects](./readme_imgs/projects.png)
