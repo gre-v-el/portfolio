@@ -7,3 +7,6 @@ Includes my resume, education, contact and most importantly a catalog of my proj
 
 ![home](./readme_imgs/home.png)
 ![projects](./readme_imgs/projects.png)
+
+![home mobile](./readme_imgs/home_mobile.png)
+![nav mobile](./readme_imgs/nav_mobile.png)
