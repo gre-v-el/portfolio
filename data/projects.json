@@ -68,6 +68,21 @@
 	],
 	"projects": [
 		{
+			"route": "AllIsBall",
+			"name": "All is Ball",
+			"date": "January-February 2024",
+			"short_description": "A proof-of-concept mobile suikalike game.",
+			"long_description": "A proof-of-concept game based on The Suika Game. My original spin on the idea is making it radial and making the player drop many balls at once. There are 7 levels, each with more balls to unlock. The game ends when the ball clump becomes too big to fit in the screen. The game is available on Google Play.",
+			"tags": [
+				"Flutter",
+				"Flame",
+				"Google Play"
+			],
+			"thumbnail": "allisball.png",
+			"live_link": "https://play.google.com/store/apps/details?id=com.gremble.all_is_ball",
+			"images": ["allisball1.jpg", "allisball2.jpg", "allisball3.jpg", "allisball4.jpg", "allisball5.jpg", "allisball6.jpg"]
+		},
+		{
 			"route": "Portfolio",
 			"name": "This website",
 			"date": "December 2023",
