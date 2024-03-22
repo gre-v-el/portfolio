@@ -68,6 +68,20 @@
 	],
 	"projects": [
 		{
+			"route": "DimensionalAnalysisCalculator",
+			"name": "Dimensional Analysis Calculator",
+			"date": "March 2024",
+			"short_description": "A useful and unique tool to convert units.",
+			"long_description": "Dimensional Analysis Calculator is a tool that helps you convert units. It accepts any combination of base and derived units, then converts them to pure SI and tries to simplify the result to express it in the most readable way. The tool is available on GitHub Pages. The website features a short article about the calculator's features. There is also a small secret to find on the website.",
+			"tags": [
+				"typescript"
+			],
+			"live_link": "https://gre-v-el.github.io/Dimensional-Calculator/",
+			"repository": "https://github.com/gre-v-el/Dimensional-Calculator",
+			"thumbnail": "dimcalc.png",
+			"images": ["dimcalc1.gif"]
+		},
+		{
 			"route": "AllIsBall",
 			"name": "All is Ball",
 			"date": "January-February 2024",
