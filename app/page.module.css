@@ -88,6 +88,9 @@ h2.reveal {
 .category-tile:nth-child(4) {
 	animation-delay: 1.2s;
 }
+.category-tile:nth-child(5) {
+	animation-delay: 1.4s;
+}
 
 
 /* Tech tiles responsiveness */

@@ -2,17 +2,16 @@ import ProjectTiles from '@/components/ProjectTiles';
 import styles from './page.module.css'
 import TechTile from '@/components/TechTile';
 import data from '@/data/projects.json';
-import hit from '@/lib/counting';
+import Head from 'next/head';
 
 export default function Home() {
-	hit('index');
-
 	let tags = data.tags;
 	let tag_groups = [
 		tags.slice(0, 4),
 		tags.slice(4, 6),
 		tags.slice(6, 11),
-		tags.slice(11, 16),
+		tags.slice(11, 12),
+		tags.slice(12, 17),
 	];
 	
 	let featured_projects = data.projects.filter((e) => data.featured.includes(e.route));

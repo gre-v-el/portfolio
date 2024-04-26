@@ -45,6 +45,10 @@
 			"color": "#333333"
 		},
 		{
+			"name": "Bash",
+			"color": "#1b1b1f"
+		},
+		{
 			"name": "Godot",
 			"color": "#0b4a7d"
 		},
@@ -67,6 +71,19 @@
 		}
 	],
 	"projects": [
+		{
+			"route": "repowatch",
+			"name": "Repowatch",
+			"date": "April 2024",
+			"short_description": "Local git repositories manager",
+			"long_description": "Repowatch is a tool that helps you manage your local git repositories. You can search for repositories, watch them, see reports, and configure automatic push/pull resolution. The tool is designed to be used in the terminal, but it also has a graphical interface. It also supports periodic desktop notifications. You can install the tool with a single command. The tool is available on GitHub.",
+			"tags": [
+				"Bash"
+			],
+			"repository": "https://github.com/gre-v-el/repo-watcher",
+			"thumbnail": "repowatch.png",
+			"images": ["repowatch1.png", "repowatch2.png", "repowatch3.png", "repowatch4.png", "repowatch5.png", "repowatch6.png"]
+		},
 		{
 			"route": "DimensionalAnalysisCalculator",
 			"name": "Dimensional Analysis Calculator",

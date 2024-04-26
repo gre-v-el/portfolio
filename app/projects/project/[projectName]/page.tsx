@@ -3,7 +3,6 @@ import style from './page.module.css';
 import { notFound } from "next/navigation";
 import Image from 'next/image';
 import Gallery from '@/components/Gallery';
-import hit from '@/lib/counting';
 import basePath from '@/lib/basePath';
 
 const data: ProjectsData = require('../../../../data/projects.json');
@@ -17,8 +16,6 @@ export function generateStaticParams() {
 export default function ProjectName(
 	{ params }: { params: { projectName: string } }
 ) {
-	hit('project');
-	
 	let proj = data.projects.find((proj) => proj.route === params.projectName);
 
 	if(proj === undefined) {

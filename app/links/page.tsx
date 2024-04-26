@@ -3,10 +3,8 @@
 import LinkTile from '@/components/LinkTile';
 import styles from './page.module.css'
 import { useRef } from 'react';
-import hit from '@/lib/counting';
 
 export default function Contact() {
-	hit('links');
 
 	let ref = useRef<HTMLDivElement>(null);
 
