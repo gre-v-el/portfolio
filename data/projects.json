@@ -72,6 +72,20 @@
 	],
 	"projects": [
 		{
+			"route": "uniart",
+			"name": "uniart",
+			"date": "July 2024",
+			"short_description": "A cli tool to display images and gifs in the terminal",
+			"long_description": "Uniart is a tool that displays images and gifs in the terminal. It is written in Rust and uses the crossterm library to display the images. The tool can display images in different modes. It can also animate gifs in real time. The tool is available on GitHub.",
+			"tags": [
+				"Rust"
+			],
+			"repository": "https://github.com/gre-v-el/uniart",
+			"release_link": "https://github.com/gre-v-el/uniart/releases",
+			"thumbnail": "uniart.png",
+			"images": ["uniart1.png", "uniart2.gif", "uniart3.gif", "uniart4.png"]
+		},
+		{
 			"route": "repowatch",
 			"name": "Repowatch",
 			"date": "April 2024",
